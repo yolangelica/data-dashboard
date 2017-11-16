@@ -15,6 +15,9 @@ body{
 	display: inline-block;/*todas las listas*/
  }
 
+ul{
+	margin-bottom: 30px;
+}
 
 .li-logo-laboratoria{/*logo imagen laboratoria*/
  	width: 180px;
@@ -29,6 +32,13 @@ body{
     right:100px;
     top:30px;
 }
+
+/*_______CONTENEDOR NAVEGADOR CIUDADES ____*/
+
+.contenedor-menu-ciudades{
+	background: #E1E1E1;
+}
+
 
 
 
