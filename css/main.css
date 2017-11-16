@@ -18,7 +18,9 @@ body{
 
 .li-logo-laboratoria{/*logo imagen laboratoria*/
  	width: 180px;
- 	margin-left: 500px;
+ 	position: absolute;
+ 	right: 600px;
+
 
  	
  }
