@@ -3,5 +3,6 @@
  */
 
  .header{
-     
+     background-color: pink;
+     border:1px solid teal;
  }
