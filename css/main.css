@@ -19,14 +19,15 @@ body{
 .li-logo-laboratoria{/*logo imagen laboratoria*/
  	width: 180px;
  	margin-left: 500px;
- 	
+
  	
  }
 
-.fa-2x {/*icono menu*/
+.fa-2x {/*icono menu en header*/
     font-size: 10px;
-    margin-left: 500px;
-
+    position:absolute;
+    right:100px;
+    top:30px;
 
 }
 
