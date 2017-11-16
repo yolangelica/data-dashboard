@@ -1,6 +1,6 @@
-/*
- * Estilos de tu proyecto
- */
+body{
+	margin:0 auto;
+}
 
  .header{
      background-color: pink;
@@ -8,9 +8,25 @@
      color:black;
  }
 
- /* Comentario random de prueba*/
- .logo-laboratoria{
- 	width: 150px;
+ /*____________HEADER__________________*/
+
+ nav ul li{
+	list-style-type: none;
+	display: inline-block;
  }
 
- .
+
+.li-logo-laboratoria{/*logo imagen laboratoria*/
+ 	width: 180px;
+ 	margin-left: 500px;
+ 	
+ 	
+ }
+
+.fa-2x {/*icono menu*/
+    font-size: 10px;
+    margin-left: 500px;
+
+
+}
+
