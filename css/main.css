@@ -11,8 +11,8 @@ body{
  /*____________HEADER__________________*/
 
  nav ul li{
-	list-style-type: none;
-	display: inline-block;
+	list-style-type: none;/*saca estilos de lista*/
+	display: inline-block;/*todas las listas*/
  }
 
 
@@ -21,8 +21,6 @@ body{
  	position: absolute;
  	right: 600px;
 
-
- 	
  }
 
 .fa-2x {/*icono menu en header*/
@@ -30,6 +28,5 @@ body{
     position:absolute;
     right:100px;
     top:30px;
-
 }
 
