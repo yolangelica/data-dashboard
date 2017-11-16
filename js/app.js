@@ -5,6 +5,9 @@
 
 console.log(data);
 
+var seleccionar_ciudad = document.getElementById('seleccionar_ciudad');
 
-
-
+var lima = 
+var aqp = 
+var stgo = 
+var mex = 

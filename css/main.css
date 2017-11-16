@@ -30,3 +30,22 @@ body{
     top:30px;
 }
 
+
+
+
+/*__________________SELECCIONAR_______________*/
+
+#seleccionar{
+    border: 1px solid orange;
+    width:402px;
+}
+
+#seleccionar_ciudad{
+    border: 1px solid greenyellow;
+    width:400px;
+}
+
+#seleccionar_generacion{
+    border:1px solid red;
+    width:400px;
+}
