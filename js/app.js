@@ -116,3 +116,96 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+
+// MENU PARA SELECCIONAR CURSO
+// Llamamos al elemento contenedor
+var seleccionar_gen = document.getElementById('select_curso');
+
+// Creamos un elemento option por generación
+// Le damos atributo value
+// Creamos un textnode para darle nombre a cada opción
+// Agregamos el textnode a la opción
+var opt_comun = document.createElement('option')
+opt_comun.setAttribute('value','value1');
+var txt_comun = document.createTextNode('Curso común');
+opt_comun.appendChild(txt_comun);
+
+var opt_sprint1 = document.createElement('option')
+opt_sprint1.setAttribute('value','value2');
+var txt_sprint1 = document.createTextNode('Sprint 1');
+opt_sprint1.appendChild(txt_sprint1);
+
+var opt_sprint2 = document.createElement('option')
+opt_sprint2.setAttribute('value','value3');
+var txt_sprint2 = document.createTextNode('Sprint 2');
+opt_sprint2.appendChild(txt_sprint2);
+
+var opt_sprint3 = document.createElement('option')
+opt_sprint3.setAttribute('value','value4');
+var txt_sprint3 = document.createTextNode('Sprint 3');
+opt_sprint3.appendChild(txt_sprint3);
+
+var opt_sprint4 = document.createElement('option')
+opt_sprint4.setAttribute('value','value4');
+var txt_sprint4 = document.createTextNode('Sprint 4');
+opt_sprint4.appendChild(txt_sprint4);
+
+var opt_js = document.createElement('option')
+opt_js.setAttribute('value','value5');
+var txt_js = document.createTextNode('Javascript');
+opt_js.appendChild(txt_js);
+
+var opt_sprint5js = document.createElement('option')
+opt_sprint5js.setAttribute('value','value6');
+var txt_sprint5js = document.createTextNode('Sprint 5');
+opt_sprint5js.appendChild(txt_sprint5js);
+
+var opt_sprint6js = document.createElement('option')
+opt_sprint6js.setAttribute('value','value7');
+var txt_sprint6js = document.createTextNode('Sprint 6');
+opt_sprint6js.appendChild(txt_sprint6js);
+
+var opt_sprint7js = document.createElement('option')
+opt_sprint7js.setAttribute('value','value8');
+var txt_sprint7js = document.createTextNode('Sprint 7');
+opt_sprint7js.appendChild(txt_sprint7js);
+
+var opt_ux = document.createElement('option')
+opt_ux.setAttribute('value','value9');
+var txt_ux = document.createTextNode('UX Design');
+opt_ux.appendChild(txt_ux);
+
+var opt_sprint5ux = document.createElement('option')
+opt_sprint5ux.setAttribute('value','value10');
+var txt_sprint5ux = document.createTextNode('Sprint 5');
+opt_sprint5ux.appendChild(txt_sprint5ux);
+
+var opt_sprint6ux = document.createElement('option')
+opt_sprint6ux.setAttribute('value','value11');
+var txt_sprint6ux = document.createTextNode('Sprint 6');
+opt_sprint6ux.appendChild(txt_sprint6ux);
+
+var opt_sprint7ux = document.createElement('option')
+opt_sprint7ux.setAttribute('value','value12');
+var txt_sprint7ux = document.createTextNode('Sprint 7');
+opt_sprint7ux.appendChild(txt_sprint7ux);
+// Agregamos las opciones al elemento select
+// Agregamos el elemento select a nuestro elemento en html
+select_curso.appendChild(opt_comun);
+select_curso.appendChild(opt_sprint1);
+select_curso.appendChild(opt_sprint2);
+select_curso.appendChild(opt_sprint3);
+select_curso.appendChild(opt_sprint4);
+select_curso.appendChild(opt_js);
+select_curso.appendChild(opt_sprint5js);
+select_curso.appendChild(opt_sprint6js);
+select_curso.appendChild(opt_sprint7js);
+select_curso.appendChild(opt_ux);
+select_curso.appendChild(opt_sprint5ux);
+select_curso.appendChild(opt_sprint6ux);
+select_curso.appendChild(opt_sprint7ux);
+
+// Determinamos el valor a mostrar al cargar la página,
+// que corresponde a nuestra generación 2017-II
+select_curso.selectedIndex = "4";
