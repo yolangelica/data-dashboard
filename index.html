@@ -15,11 +15,6 @@
         </ul>
       </nav>
     </header>
-
-    </div>
-    
-    <div ></div>
-
    
     <section id='seleccionar'>  
 
@@ -81,20 +76,22 @@
 
 <!--_________________MENU VERTICAL____________________________________-->
 
-  <nav class="nav-menu-vertical" id="menu_user">
-    <ul >
-    <li><a class="usuario" href="#">
-      <img class="icono-mujer" src="assets/images/icono-mujer.png" alt="">
-       Usuario <br> usuario@mail.com
-    </a>
-     </li>
-    <li><a href="#">Dashboard</a></li>
-    <li><a href="#">Contacto</a></li>
-    <li><a href="#">Settings</a></li>
-   </ul>
-     </nav>
+    <nav class="nav-menu-vertical" id="menu_user">
+      <ul >
+      <li><a class="usuario" href="#">
+        <img class="icono-mujer" src="assets/images/icono-mujer.png" alt="">
+        Usuario <br> usuario@mail.com
+        </a>
+      </li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
 <!--______________SECCION GRAFICOS____________________________________-->
-    <section id='notas_tecnicas'>
+<section class="graficos" id="graficos">
+
+    <div id='notas_tecnicas'>
         <h4>PUNTAJE TÉCNICO</h4><select name="select_curso" id="select_curso"></select>
         <table>
           <tr>
@@ -110,9 +107,9 @@
         </table>
         <img src="assets/images/rectangular-graphic.png" alt="">
         <img src="assets/images/circle-graphic.png" alt="">
-    </section>
+      </div>
 
-    <section id='notas_hse'>
+    <div id='notas_hse'>
         <h4>PUNTAJE HSE</h4><select name="selec_hse" id="select_hse"></select>
         <table>
           <tr>
@@ -129,10 +126,12 @@
         <img src="assets/images/rectangular-graphic.png" alt="">
         <img src="assets/images/circle-graphic.png" alt="">
         
-    </section>
+      </div>
 
+</section>
   
-		<!-- Base de datos -->
+    
+      <!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
     <script src="./js/app.js"></script>
