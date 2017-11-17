@@ -28,14 +28,68 @@
       </div>
 
       <div id="seleccionar_generacion">
+      </div>s
+      <!--________MENU TAB (PESTAÑAS) OPCIONES:INFO GENERAL, ESTUDIANTES, PROFESORES_______-->
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'overview')">INFORMACION GENERAL</button>
+        <button class="tablinks" onclick="openCity(event, 'students')">ESTUDIANTES</button>
+        <button class="tablinks" onclick="openCity(event, 'teachers')">PROFESORES</button>
       </div>
-      <div class="contenedor-over-student-teach ">
-        <h4>OVERVIEW</h4>
-        <h4>STUDENTS</h4>
-        <h4>TEACHERS</h4>
+
+      <div id="overview" class="tabcontent"><!--PESTAÑA INFO GENERAL ALUMNAS-->
+            <h3>INFORMACION GENERAL</h3>
+            <p>DIVS CON INFO </p>
+          <div class="info-general"><!--contenedor caja alumnas asistentes a clases-->
+            <p>x alumnas asisten a la fecha a Laboratoria</p>
+            <img src="assets/images/bar-graph.png" alt="">
+          </div>
+          <div class="info-general"><!--alumnas inscritas generacion II 2017-->
+            <p> x alumnas inscritas II 2017</p>
+            <img src="assets/images/circle-graphic.png" alt="">
+            <h4>50% mas que la generacion anterior!</h4>
+          </div>
+          <div class="info-general"><!--alumnas desertoras info-->
+            <p> X Alumnas han desertado a la fecha</p>
+            <img src="assets/images/circle-graphic.png" alt="">
+            <p>10% menos que la generacion anterior!</p>
+          </div>
+
+          <div class="info-general"><!--SPRINT con mas desercion-->
+            <p>SPRINT con mas desercion actual</p>
+            <img src="assets/images/bar-graph.png" alt="">
+            <p>Sprint N°2 presenta mas deserciones en generaciones anteriores</p>
+            
+          </div>
         </div>
+  
+
+      <div id="students" class="tabcontent"><!--PESTAÑA LISTA DE ALUMNAS-->
+        <h3>ESTUDIANTES</h3>
+        <p>Lista de alumnas Generacion II 2017</p> 
+      </div>
+
+      <div id="teachers" class="tabcontent"><!--PESTAÑA LISTA DE PROFESORES-->
+        <h3>PROFESORES</h3>
+        <p>Lista de profesores</p>
+      </div>
+
     </section>
 
+<!--_________________MENU VERTICAL____________________________________-->
+
+  <nav class="nav-menu-vertical"><!--indica que se envia una barra de navegacion-->
+    <ul ><!--ul trabaja con li para una lista desordenada-->
+    <li><a class="usuario" href="#">
+      <img class="icono-mujer" src="assets/images/icono-mujer.png" alt="">
+       Usuario <br> usuario@mail.com
+    </a>
+     </li>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Contacto</a></li>
+    <li><a href="#">Settings</a></li>
+   </ul>
+     </nav>
+<!--______________SECCION GRAFICOS____________________________________-->
     <section id='notas_tecnicas'>
         <span><h4>PUNTAJE TÉCNICO</h4></span>
         

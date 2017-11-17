@@ -101,3 +101,18 @@ seleccionar_gen.appendChild(select_gen);
 // Determinamos el valor a mostrar al cargar la página,
 // que corresponde a nuestra generación 2017-II
 select_gen.selectedIndex = "4";
+
+/*__________MENU TAB (info general, estudiantes, profesores_________*/
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
