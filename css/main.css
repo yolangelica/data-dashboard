@@ -149,8 +149,9 @@ div.tab button.active {
 /*__________MENU VERTICAL_________________________*/
 
 .nav-menu-vertical{
-    width:160px;
-    position: fixed;
+    width:156px;
+    position: fixed ;
+    top:82px !important;
     border:1px solid yellow;
     height:90%;
     background-color: white;
@@ -208,7 +209,6 @@ a:active{
 /*____________________puntaje técnico_________________________*/
 #graficos{
     position: relative;
-    left: 160px;
     width:87.5%;
 }
 

@@ -18,8 +18,7 @@
    
     <section id='seleccionar'>  
 
-      <div id="seleccionar_ciudad">
-       
+      <div id="seleccionar_ciudad">       
       </div>
 
       <div id="seleccionar_generacion">
@@ -32,35 +31,71 @@
       </div>
 
       <div id="overview" class="tabcontent"><!--PESTAÑA INFO GENERAL ALUMNAS-->
-          <table>
-            <tr>
-              <td class="info-general"><!--contenedor caja alumnas asistentes a clases-->
-                <p>x alumnas asisten a la fecha a Laboratoria</p>
-                <img src="assets/images/bar-graph.png" alt="">
-              </td>
+        <table>
+          <tr>
+            <td class="info-general"><!--contenedor caja alumnas asistentes a clases-->
+              <p>x alumnas asisten a la fecha a Laboratoria</p>
+              <img src="assets/images/bar-graph.png" alt="">
+            </td>
 
-              <td class="info-general"><!--alumnas inscritas generacion II 2017-->
-                <p> x alumnas inscritas II 2017</p>
-                <img src="assets/images/circle-graphic.png" alt="">
-                <p>50% mas que la generacion anterior!</p>
-              </td>
+            <td class="info-general"><!--alumnas inscritas generacion II 2017-->
+              <p> x alumnas inscritas II 2017</p>
+              <img src="assets/images/circle-graphic.png" alt="">
+              <p>50% mas que la generacion anterior!</p>
+            </td>
 
-              <td class="info-general"><!--alumnas desertoras info-->
-                <p> X Alumnas han desertado a la fecha</p>
-                <img src="assets/images/circle-graphic.png" alt="">
-                <p>10% menos que la generacion anterior!</p>
-              </td>
+            <td class="info-general"><!--alumnas desertoras info-->
+              <p> X Alumnas han desertado a la fecha</p>
+              <img src="assets/images/circle-graphic.png" alt="">
+              <p>10% menos que la generacion anterior!</p>
+            </td>
 
-              <td class="info-general"><!--SPRINT con mas desercion-->
-                <p>SPRINT con mas desercion actual</p>
-                <img src="assets/images/bar-graph.png" alt="">
-                <p>Sprint N°2 presenta mas deserciones en generaciones anteriores</p>
-              </td>
-
-            </tr>  
-          </table>
-        </div>
-  
+            <td class="info-general"><!--SPRINT con mas desercion-->
+              <p>SPRINT con mas desercion actual</p>
+              <img src="assets/images/bar-graph.png" alt="">
+              <p>Sprint N°2 presenta mas deserciones en generaciones anteriores</p>
+            </td>
+          </tr>  
+        </table>
+        <section class="graficos" id="graficos">
+            
+          <div id='notas_tecnicas'>
+            <h4>PUNTAJE TÉCNICO</h4><select name="select_curso" id="select_curso"></select>
+            <table>
+              <tr>
+                <td>
+                  <h4>90</h4>
+                  <p>estudiantes lograron el objetivo</p>
+                </td>
+                <td>
+                  <h4>62%</h4>
+                  <p>del total (135)</p>
+                </td>
+              </tr>              
+            </table>
+            <img src="assets/images/rectangular-graphic.png" alt="">
+            <img src="assets/images/circle-graphic.png" alt="">
+          </div>
+            
+          <div id='notas_hse'>
+            <h4>PUNTAJE HSE</h4><select name="selec_hse" id="select_hse"></select>
+            <table>
+              <tr>
+                <td>
+                  <h4>80</h4>
+                  <p>Promedio general</p>
+                </td>
+                <td>
+                  <h4>62</h4>
+                  <p>estudiantes lograron el obejtivo</p>
+                </td>
+              </tr>              
+            </table>
+            <img src="assets/images/rectangular-graphic.png" alt="">
+            <img src="assets/images/circle-graphic.png" alt="">
+          </div>            
+        </section>         
+      </div>  
 
       <div id="students" class="tabcontent"><!--PESTAÑA LISTA DE ALUMNAS-->
           <h3>ESTUDIANTES</h3>
@@ -89,47 +124,7 @@
       </ul>
     </nav>
 <!--______________SECCION GRAFICOS____________________________________-->
-<section class="graficos" id="graficos">
 
-    <div id='notas_tecnicas'>
-        <h4>PUNTAJE TÉCNICO</h4><select name="select_curso" id="select_curso"></select>
-        <table>
-          <tr>
-            <td>
-              <h4>90</h4>
-              <p>estudiantes lograron el objetivo</p>
-            </td>
-            <td>
-              <h4>62%</h4>
-              <p>del total (135)</p>
-            </td>
-          </tr>              
-        </table>
-        <img src="assets/images/rectangular-graphic.png" alt="">
-        <img src="assets/images/circle-graphic.png" alt="">
-      </div>
-
-    <div id='notas_hse'>
-        <h4>PUNTAJE HSE</h4><select name="selec_hse" id="select_hse"></select>
-        <table>
-          <tr>
-            <td>
-              <h4>80</h4>
-              <p>Promedio general</p>
-            </td>
-            <td>
-              <h4>62</h4>
-              <p>estudiantes lograron el obejtivo</p>
-            </td>
-          </tr>              
-        </table>
-        <img src="assets/images/rectangular-graphic.png" alt="">
-        <img src="assets/images/circle-graphic.png" alt="">
-        
-      </div>
-
-</section>
-  
     
       <!-- Base de datos -->
 		<script src="./js/data.js"></script>
