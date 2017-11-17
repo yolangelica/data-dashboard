@@ -302,4 +302,5 @@ a:active{
 #especialidades{
     border:1px dotted darkorchid;
     width: 200px;
+    display: inline-block;
 }

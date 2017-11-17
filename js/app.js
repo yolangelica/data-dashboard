@@ -270,8 +270,12 @@ select_hse.selectedIndex = "4";
 // _____________ AGREGAR ALUMNAS_________//
 
 var content_students = document.getElementById('contenedor_alumnas');
+for (var i = 0; i < data.students.length; i++){
 
 var div_all_students = document.createElement('div');
+div_all_students.style.border= '1px solid green';
+div_all_students.style.display='inline-block';
+div_all_students.style.verticalAlign='top';
 
 var div_students = document.createElement('div');
 
@@ -281,19 +285,48 @@ var tr_student = document.createElement('tr');
 
 var td_student = document.createElement('td');
 var img_student = document.createElement('img');
+img_student.setAttribute("src", data.students[i].photo);
+td_student.appendChild(img_student);
 
 var td_name = document.createElement('td');
 var name_student = document.createElement('h4');
+var txt_name_student = document.createTextNode(data.students[i].name);
+name_student.appendChild(txt_name_student);
 var spcl_student = document.createElement('h5');
+var txt_spcl_student = document.createTextNode('lol');
+spcl_student.appendChild(txt_spcl_student);
+td_name.appendChild(name_student);
+td_name.appendChild(spcl_student);
 
 var td_tech_points = document.createElement('td');
 var tech_points = document.createElement('h5');
+var txt_tech_points = document.createTextNode(data.students[i].sprints[i].score.tech);
+tech_points.appendChild(txt_tech_points);
+td_tech_points.appendChild(tech_points);
 
 var td_hse_points = document.createElement('td');
 var hse_points = document.createElement('h5');
+var txt_hse_points = document.createTextNode(data.students[i].sprints[i].score.hse);
+hse_points.appendChild(txt_hse_points);
+td_hse_points.appendChild(hse_points);
 
 var td_english = document.createElement('td');
 var english_lvl = document.createElement('h5');
+var txt_english = document.createTextNode('Nivel inglés');
+english_lvl.appendChild(txt_english);
+td_english.appendChild(english_lvl);
+
+tr_student.appendChild(td_student);
+tr_student.appendChild(td_name);
+tr_student.appendChild(td_tech_points);
+tr_student.appendChild(td_hse_points);
+tr_student.appendChild(td_english);
+tab_student.appendChild(tr_student);
+div_students.appendChild(tab_student);
+div_all_students.appendChild(div_students);
+content_students.appendChild(div_all_students);
+
+}
 
 
 
