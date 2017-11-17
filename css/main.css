@@ -148,12 +148,12 @@ div.tab button.active {
 
 .nav-menu-vertical{
     width:160px;
-    float:right;
+    float:left;
     border:1px solid yellow;
     height:90%;
-    display:none;
     margin-top: -160px;
-    z-index: 999999;    
+    display: inline;
+       
 }
 
 .nav-menu-vertical ul {
