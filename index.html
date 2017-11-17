@@ -88,7 +88,7 @@
             <h4>PUNTAJE HSE</h4><select name="selec_hse" id="select_hse"></select>
 
 
-            <form action="/action_page.php" method="get" class="turno">
+            <form action="/action_page.php" method="get" class="turno"><!--Agrega Checkbox para seleccionar horario AM o PM-->
               <input type="checkbox" name="turno" value="AM" checked>Turno AM
               <input type="checkbox" name="turno" value="PM" checked>Turno PM
             </form>
@@ -114,11 +114,19 @@
       <div id="students" class="tabcontent"><!--PESTAÑA LISTA DE ALUMNAS-->
           <h3>ESTUDIANTES</h3>
           <p>Lista de alumnas Generacion II 2017</p> 
+          <form action="/action_page.php" method="get" class="turno"><!--Agrega Checkbox para seleccionar horario AM o PM-->
+              <input type="checkbox" name="turno" value="AM" checked>Turno AM
+              <input type="checkbox" name="turno" value="PM" checked>Turno PM
+            </form>
       </div>
 
       <div id="teachers" class="tabcontent"><!--PESTAÑA LISTA DE PROFESORES-->
           <h3>PROFESORES</h3>
           <p>Lista de profesores</p>
+          <form action="/action_page.php" method="get" class="turno"><!--Agrega Checkbox para seleccionar horario AM o PM-->
+              <input type="checkbox" name="turno" value="AM" checked>Turno AM
+              <input type="checkbox" name="turno" value="PM" checked>Turno PM
+            </form>
       </div>
 
     </section>
