@@ -266,3 +266,4 @@ select_hse.appendChild(opt_hse4);
 // Determinamos el valor a mostrar al cargar la página,
 // que corresponde a nuestra ciudad, Santiago
 select_hse.selectedIndex = "4";
+
