@@ -47,25 +47,35 @@ ul{
 
 #seleccionar{
     border: 1px solid orange;
-    width:610px;
+    width:410px;
 }
 
 #seleccionar_ciudad{
     border: 1px solid greenyellow;
-    width:300px;
+    width:280px;
     display: inline-block;
 }
 
 #select_ciudad{
     font-size: 24px;
     font-weight: bold;
-    width:300px;
+    width:280px;
     background-color: transparent;
     border:none;    
+    font-family: inherit;
 }
 
 #seleccionar_generacion{
     border:1px solid red;
-    width:300px;
+    width:120px;
     display: inline-block;
+}
+
+#select_generacion{
+    font-size: 24px;
+    font-weight: bold;
+    width:120px;
+    background-color: transparent;
+    border:none; 
+    font-family: inherit;
 }
