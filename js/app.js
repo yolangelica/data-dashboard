@@ -267,3 +267,34 @@ select_hse.appendChild(opt_hse4);
 // que corresponde a nuestra ciudad, Santiago
 select_hse.selectedIndex = "4";
 
+// _____________ AGREGAR ALUMNAS_________//
+
+var content_students = document.getElementById('contenedor_alumnas');
+
+var div_all_students = document.createElement('div');
+
+var div_students = document.createElement('div');
+
+var tab_student = document.createElement('table');
+
+var tr_student = document.createElement('tr');
+
+var td_student = document.createElement('td');
+var img_student = document.createElement('img');
+
+var td_name = document.createElement('td');
+var name_student = document.createElement('h4');
+var spcl_student = document.createElement('h5');
+
+var td_tech_points = document.createElement('td');
+var tech_points = document.createElement('h5');
+
+var td_hse_points = document.createElement('td');
+var hse_points = document.createElement('h5');
+
+var td_english = document.createElement('td');
+var english_lvl = document.createElement('h5');
+
+
+
+

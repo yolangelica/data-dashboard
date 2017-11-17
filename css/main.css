@@ -276,3 +276,16 @@ a:active{
     text-align: center;
     width: 200px;
 }
+
+
+
+/*_________________ESTUDIANTES________________________*/
+
+#contenedor_alumnas{
+    border:1px dotted dodgerblue;
+}
+
+#especialidades{
+    border:1px dotted darkorchid;
+    width: 200px;
+}

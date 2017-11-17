@@ -112,12 +112,15 @@
       </div>  
 
       <div id="students" class="tabcontent"><!--PESTAÑA LISTA DE ALUMNAS-->
-          <h3>ESTUDIANTES</h3>
-          <p>Lista de alumnas Generacion II 2017</p> 
-          <form action="/action_page.php" method="get" class="turno"><!--Agrega Checkbox para seleccionar horario AM o PM-->
-              <input type="checkbox" name="turno" value="AM" checked>Turno AM
-              <input type="checkbox" name="turno" value="PM" checked>Turno PM
-            </form>
+        <div id='contenedor_alumnas'>  <!-- DIV para poner lista de alumnas segun especializacion -->
+          <div id="especialidades">
+              <h3>ESPECIALIZACION</h3>
+              <input type="checkbox" name="especialidad" value="am">Plan común AM <br>
+              <input type="checkbox" name="especialidad" value="pm" checked>Plan común PM <br>             
+              <input type="checkbox" name="especialidad" value="ux">UX Design <br>
+              <input type="checkbox" name="especialidad" value="js">Javascript <br>              
+          </div>
+        </div>
       </div>
 
       <div id="teachers" class="tabcontent"><!--PESTAÑA LISTA DE PROFESORES-->
