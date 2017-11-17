@@ -116,18 +116,33 @@ div.tab button.active {
 	border:1px solid black;
 	display: inline-block;
 	width: 250px;
-	height: 200px;
+	height: 180px;
 	background: #FFFFFF;
-
 }
+
+#overview{
+    border:1px solid green;
+}
+
+#overview td{
+    padding: 0px;
+    vertical-align: top;
+    text-align: center;
+}
+
+#overview img{
+    height: 80px;
+}
+
+#overview p{
+    margin:4px;
+}
+
 /*__________MENU VERTICAL_________________________*/
 
 .nav-menu-vertical{
 	width:160px;
-	display: inline-block;
-	float: left;
-
-	
+	float: left;	
 }
 
 .nav-menu-vertical ul {
