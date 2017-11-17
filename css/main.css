@@ -151,7 +151,7 @@ div.tab button.active {
 .nav-menu-vertical{
     width:156px;
     position: fixed ;
-    top:82px !important;
+    top:0px !important;
     border:1px solid yellow;
     height:90%;
     background-color: white;
@@ -239,6 +239,10 @@ a:active{
     border: 1px solid palevioletred;
     text-align: center;
     width: 200px;
+}
+
+.turno{
+    display: inline-block;
 }
 
 /*____________________puntaje hse_________________________*/
