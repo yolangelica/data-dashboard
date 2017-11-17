@@ -43,7 +43,7 @@ ul{
 
 #seleccionar{
     border: 1px solid orange;
-    width:auto;
+    width:100%;
     display: inline-block;
 }
 
@@ -83,6 +83,7 @@ div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    z-index:0;
 }
 
 /* estilo de los botones dentro de la pestaña */
@@ -146,10 +147,13 @@ div.tab button.active {
 /*__________MENU VERTICAL_________________________*/
 
 .nav-menu-vertical{
-	width:160px;
-    float: left;
+    width:160px;
+    float:right;
     border:1px solid yellow;
     height:90%;
+    display:none;
+    margin-top: -160px;
+    z-index: 999999;    
 }
 
 .nav-menu-vertical ul {
@@ -204,7 +208,7 @@ a:active{
 /*____________________puntaje técnico_________________________*/
 #notas_tecnicas{
     border:1px solid brown;
-    margin-left:170px;
+    
 }
 
 #notas_tecnicas h4{

@@ -209,3 +209,10 @@ select_curso.appendChild(opt_sprint7ux);
 // Determinamos el valor a mostrar al cargar la página,
 // que corresponde a nuestra generación 2017-II
 select_curso.selectedIndex = "4";
+
+var menu_vertical = document.getElementById('menu_user');
+
+function menu_user(){
+    menu_vertical.style.zIndex= '999999';
+    menu_vertical.style.display='block';
+}
