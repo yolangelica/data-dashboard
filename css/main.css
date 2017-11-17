@@ -123,7 +123,7 @@ div.tab button.active {
 /*__________MENU VERTICAL_________________________*/
 
 .nav-menu-vertical{
-	width:160px;/*semantico correcto: se da ancho a nav;*/
+	width:160px;
 	display: inline-block;
 	float: left;
 
@@ -131,7 +131,6 @@ div.tab button.active {
 }
 
 .nav-menu-vertical ul {
-	/*outline: 1px solid yellow;/*propiedad donde dibuja contorno etiqueta ayuda visual*/
 	list-style: none;/*le quita el estilo a la lista (Estilo puntos)*/
 	margin: 0;
 	padding: 0;
@@ -140,15 +139,15 @@ div.tab button.active {
 }
 
 .nav-menu-vertical ul li{
-	/*outline: 1px solid red;guia espacio*/
+	
 	background: #f5f5f0;
 	display: inline;
 	widows: 150px;
 	}
-	/*Estados de los enlaces:Link Visited Hover Active;*/
+	
 
 a{
-	/*outline: 1px solid green;guia espacio*/
+	
 	display: block;/*transforma de linea a block, asi ocupa el espacio ancho etiqueta padre*/
 	text-decoration: none;
 	color:#000;
