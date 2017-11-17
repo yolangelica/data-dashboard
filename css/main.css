@@ -138,7 +138,7 @@ div.tab button.active {
     text-align: center;
 }
 
-#overview img{
+.graficos-superiores{/*graficos superiores en linea*/
     height: 80px;
 }
 
@@ -206,14 +206,22 @@ a:active{
 }
 
 /*____________________SECCION GRAFICOS________________________*/
+
+/*imagenes graficos hse y tecnico*/
+
+
+
+
 /*____________________puntaje técnico_________________________*/
 #graficos{
     position: relative;
     width:87.5%;
+    background: #FFFFFF;
 }
 
 #notas_tecnicas{
-    border:1px solid brown;   
+    border:3px solid orange;   /*distingue el alcance del contenedor*/
+ 	background:#FFFFFF;
 }
 
 #notas_tecnicas h4{
@@ -227,18 +235,23 @@ a:active{
     font-size: 14px;
 }
 
-#select_curso{
+#select_curso{/*selecciona Sprint en puntaje tecnico*/
     border:1px solid turquoise;
 }
 
 #notas_tecnicas table{
     margin-top:5px;
+
 }
 
-#notas_tecnicas td{
-    border: 1px solid palevioletred;
+.img-graficos-body{/*div de graficos y textos en pntje tecnico*/
+    border: 3px solid red;
     text-align: center;
-    width: 200px;
+    width: 400px;
+    height: 300px;
+    margin-left: 40px;
+
+
 }
 
 .turno{
@@ -250,6 +263,7 @@ a:active{
 #notas_hse{
     border:1px solid brown;   
     margin-left:
+
 }
 
 #notas_hse h4{

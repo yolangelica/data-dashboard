@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"><!--iconos-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--tipografia-->
   </head>
   <body>
     <header>
@@ -35,24 +36,24 @@
           <tr>
             <td class="info-general"><!--CONTENEDOR ALUMNAS PRESENTES EN CLASES-->
               <p>x alumnas asisten a la fecha a Laboratoria</p>
-              <img src="assets/images/bar-graph.png" alt="">
+              <img class="graficos-superiores" src="assets/images/bar-graph.png" alt="">
             </td>
 
             <td class="info-general"><!--alumnas inscritas generacion II 2017-->
               <p> x alumnas inscritas II 2017</p>
-              <img src="assets/images/circle-graphic.png" alt="">
+              <img class="graficos-superiores" src="assets/images/circle-graphic.png" alt="">
               <p>50% mas que la generacion anterior!</p>
             </td>
 
             <td class="info-general"><!--alumnas desertoras info-->
               <p> X Alumnas han desertado a la fecha</p>
-              <img src="assets/images/circle-graphic.png" alt="">
+              <img class="graficos-superiores" src="assets/images/circle-graphic.png" alt="">
               <p>10% menos que la generacion anterior!</p>
             </td>
 
             <td class="info-general"><!--SPRINT con mas desercion-->
               <p>SPRINT con mas desercion actual</p>
-              <img src="assets/images/bar-graph.png" alt="">
+              <img class="graficos-superiores" src="assets/images/bar-graph.png" alt="">
               <p>Sprint N°2 presenta mas deserciones en generaciones anteriores</p>
             </td>
           </tr>  
@@ -60,7 +61,7 @@
      
         <section class="graficos" id="graficos">
             
-          <div id='notas_tecnicas'>
+          <div id='notas_tecnicas'><!--CONTENEDOR PRINCIPAL PUNTAJE TECNICO-->
             <h4>PUNTAJE TÉCNICO</h4><select name="select_curso" id="select_curso"></select>
 
             <form action="/action_page.php" method="get" class="turno">
@@ -68,20 +69,22 @@
               <input type="checkbox" name="turno" value="PM" checked>Turno PM
             </form>
 
-            <table>
+            <table><!--contenedor info e imagenes puntaje tecnico-->
               <tr>
                 <td>
                   <h4>90</h4>
-                  <p>estudiantes lograron el objetivo</p>
+                  <p>Estudiantes lograron el objetivo</p>
+                  <img class="img-graficos-body" src="assets/images/rectangular-graphic.png" alt="">
                 </td>
                 <td>
                   <h4>62%</h4>
                   <p>del total (135)</p>
+                  <img class="img-graficos-body" src="assets/images/circle-graphic.png" alt="">
                 </td>
               </tr>              
             </table>
-            <img src="assets/images/rectangular-graphic.png" alt="">
-            <img src="assets/images/circle-graphic.png" alt="">
+            
+            
           </div>
             
           <div id='notas_hse'>
@@ -98,15 +101,17 @@
                 <td>
                   <h4>80</h4>
                   <p>Promedio general</p>
+                  <img class="img-graficos-body" src="assets/images/rectangular-graphic.png" alt="">
                 </td>
                 <td>
                   <h4>62</h4>
                   <p>estudiantes lograron el obejtivo</p>
+                  <img class="img-graficos-body" src="assets/images/circle-graphic.png" alt="">
                 </td>
               </tr>              
             </table>
-            <img src="assets/images/rectangular-graphic.png" alt="">
-            <img src="assets/images/circle-graphic.png" alt="">
+           
+            
           </div>            
         </section>         
       </div>  
