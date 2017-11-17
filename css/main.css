@@ -207,8 +207,7 @@ a:active{
 /*____________________SECCION GRAFICOS________________________*/
 /*____________________puntaje técnico_________________________*/
 #notas_tecnicas{
-    border:1px solid brown;
-    
+    border:1px solid brown;   
 }
 
 #notas_tecnicas h4{
@@ -231,6 +230,37 @@ a:active{
 }
 
 #notas_tecnicas td{
+    border: 1px solid palevioletred;
+    text-align: center;
+    width: 200px;
+}
+
+/*____________________puntaje hse_________________________*/
+
+#notas_hse{
+    border:1px solid brown;   
+}
+
+#notas_hse h4{
+    display: inline-block;
+    border:1px solid teal;
+    margin: 1px;
+}
+
+#notas_hse p{
+    margin: 1px;
+    font-size: 14px;
+}
+
+#select_hse{
+    border:1px solid turquoise;
+}
+
+#notas_hse table{
+    margin-top:5px;
+}
+
+#notas_hse td{
     border: 1px solid palevioletred;
     text-align: center;
     width: 200px;

@@ -117,7 +117,6 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-
 // MENU PARA SELECCIONAR CURSO
 // Llamamos al elemento contenedor
 var seleccionar_gen = document.getElementById('select_curso');
@@ -210,9 +209,60 @@ select_curso.appendChild(opt_sprint7ux);
 // que corresponde a nuestra generación 2017-II
 select_curso.selectedIndex = "4";
 
+
+
+
 var menu_vertical = document.getElementById('menu_user');
 
 function menu_user(){
     menu_vertical.style.zIndex= '999999';
     menu_vertical.style.display='block';
 }
+
+
+
+
+// MENU PARA SELECCIONAR CIUDAD
+// Llamamos al elemento contenedor
+var select_hse = document.getElementById('select_hse');
+
+// Creamos un elemento option por sprint
+// Le damos atributo value
+// Creamos un textnode para darle nombre a cada opción
+// Agregamos el textnode a la opción
+var opt_hse = document.createElement('option')
+opt_hse.setAttribute('value','value1');
+var txt_hse = document.createTextNode('HSE');
+opt_hse.appendChild(txt_hse);
+
+var opt_hse1 = document.createElement('option')
+opt_hse1.setAttribute('value','value2');
+var txt_hse1 = document.createTextNode('Sprint 1');
+opt_hse1.appendChild(txt_hse1);
+
+var opt_hse2 = document.createElement('option')
+opt_hse2.setAttribute('value','value3');
+var txt_hse2 = document.createTextNode('Sprint 2');
+opt_hse2.appendChild(txt_hse2);
+
+var opt_hse3 = document.createElement('option')
+opt_hse3.setAttribute('value','value4');
+var txt_hse3 = document.createTextNode('Sprint 3');
+opt_hse3.appendChild(txt_hse3);
+
+var opt_hse4 = document.createElement('option')
+opt_hse4.setAttribute('value','value4');
+var txt_hse4 = document.createTextNode('Sprint 4');
+opt_hse4.appendChild(txt_hse4);
+
+// Agregamos las opciones al elemento select
+// Agregamos el elemento select a nuestro elemento en html
+select_hse.appendChild(opt_hse);
+select_hse.appendChild(opt_hse1);
+select_hse.appendChild(opt_hse2);
+select_hse.appendChild(opt_hse3);
+select_hse.appendChild(opt_hse4);
+
+// Determinamos el valor a mostrar al cargar la página,
+// que corresponde a nuestra ciudad, Santiago
+select_hse.selectedIndex = "4";
