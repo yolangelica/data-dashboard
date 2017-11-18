@@ -335,7 +335,7 @@ var lookfor_students = document.getElementsByName('especialidad');
 
 google.charts.setOnLoadCallback(drawSarahChart);
 
-      // GRAFICO EVALUACIONES TECNICAS
+      //___________________ GRAFICO EVALUACIONES TECNICAS_______________________
       google.charts.setOnLoadCallback(drawAnthonyChart);
 
       // FUNCION EVALUACIONES TECNICAS BARRA
@@ -354,7 +354,7 @@ google.charts.setOnLoadCallback(drawSarahChart);
         ]);
         
 
-        // Set options for Sarah's pie chart.
+        // tamaño contenedor grafico barra
         var options = {title:'% de Alumnas que logran el 70% en Evaluaciones Técnicas',
                        width:500,
                        height:300};
@@ -364,27 +364,56 @@ google.charts.setOnLoadCallback(drawSarahChart);
         chart.draw(data, options);
       }
 
-      // Callback that draws the pie chart for Anthony's pizza.
+      // función grafico torta Evaluacion por Nivel 
       function drawAnthonyChart() {
 
-        // Create the data table for Anthony's pizza.
+        // ______________GRAFICO TORTA
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
         data.addRows([
-          ['Quizz1', 2],
-          ['Quizz2', 2],
-          ['Reto', 2],
-          ['Producto Final', 0],
-          ['Promedio evaluaciones', 3]
+          ['Nivel Alto [90-100]', 2],
+          ['Nivel Medio Alto [70-89]', 2],
+          ['Nivel Medio [50-69]', 2],
+          ['Nivel Medio bajo [30-49]', 0],
+          ['Nivel Bajo [0-29]', 3]
         ]);
 
-        // Set options for Anthony's pie chart.
-        var options = {title:'How Much Pizza Anthony Ate Last Night',
-                       width:400,
+        // tamaño contenedor grafico torta
+        var options = {title:'% de Alumnas por Nivel de Evaluación',
+                       width:450,
                        height:300};
 
-        // Instantiate and draw the chart for Anthony's pizza.
+        // 
         var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
         chart.draw(data, options);
       }
+
+      //____________GRAFICO EVALUACIONES HSE_____________________________
+    
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Month', 'Trabajo equipo', 'Comunicacion', 'Manejo estrés', 'PROMEDIO'],
+         ['Sprint1',  60,      75,         60,          70],
+         ['Sprint2',  50,      60,        100,          75],
+         ['Sprint3',  55,      90,         70,          80],
+         
+         
+      ]);
+
+    var options = {
+      title : 'Evaluación por Sprint',
+      vAxis: {title: '%Evaluación'},
+      hAxis: {title: '2017 II'},
+      seriesType: 'bars',
+      series: {5: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+	

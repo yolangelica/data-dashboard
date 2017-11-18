@@ -317,7 +317,17 @@ a:active{
     width: 200px;
 }
 */
+/*_______________GRAFICOS HSE_________________________*/
 
+.div_chart{
+	width: 100%;
+
+}
+
+
+
+svg[Attributes Style]{width: 500;
+    height: 200;}
 
 /*_________________ESTUDIANTES________________________*/
 
@@ -366,7 +376,7 @@ a:active{
     border-radius: 0px 0px 3px 3px;
 }
 
-/*iconos profesores info e imagenes*/
+/*_________PESTAÑA PROFESORES info e imagenes________*/
 html {
   box-sizing: border-box;
 }
