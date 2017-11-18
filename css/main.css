@@ -47,14 +47,14 @@ ul{
     border: 1px solid transparent;
     width:87.5%;
     display: inline-block;
-    margin-left: 160px;
+    margin-left: 155px;
 }
 
 #seleccionar_ciudad{
     border: 1px solid transparent;
     width:280px;
     display: inline-block;
-    height:43px;
+    height:45px;
 }
 
 #select_ciudad{
@@ -144,7 +144,12 @@ div.tab button.active {
     height: 80px;
 }
 
+#overview h4{
+    margin:4px;
+}
+
 #overview p{
+    font-size: 14px;
     margin:4px;
 }
 
@@ -154,7 +159,7 @@ div.tab button.active {
     width:156px;
     position: fixed ;
     top:0px !important;
-    border:1px solid transparent;
+    border-right:1px solid lightgray;
     height:90%;
     background-color: white;
 }
@@ -169,13 +174,20 @@ div.tab button.active {
 .nav-menu-vertical ul li{
 	background: #f5f5f0;
     display: inline;
-	}
+    }
+    
+.nav-menu-vertical i{
+    color:grey;
+    margin-right:20px;
+    font-size: 16px;
+}
 	
 a{	
 	display: block;/*transforma de linea a block, asi ocupa el espacio ancho etiqueta padre*/
 	text-decoration: none;
 	color:#000;
-	padding-left:8px;
+    padding-left:8px;
+    font-size: 14px;
 }
 
 a:hover {
@@ -184,8 +196,7 @@ a:hover {
 
 .usuario{
     background:#f9a91a;
-	line-height: 24px !important;	
-    
+	line-height: 24px !important;	    
 }
 
 .usuario a {
@@ -210,30 +221,31 @@ a:active{
 
 /*____________________SECCION GRAFICOS________________________*/
 
-/*imagenes graficos hse y tecnico*/
-
-
-
-
-/*____________________puntaje técnico_________________________*/
+/*____________________divs de puntajes y gráficos_________________________*/
 #graficos{
     position: relative;
     width:87.5%;
-    background: #FFFFFF;
+    border: 1px solid transparent; 
+    margin-top:10px;
+    margin-left:2px;
+    width:1006px;
 }
 
-#notas_tecnicas{
-    border:3px solid transparent;   /*distingue el alcance del contenedor*/
- 	background:#FFFFFF;
+.div_notas{
+    border:1px solid transparent;   /*distingue el alcance del contenedor*/
+    background:#FFFFFF;
+    border-radius: 3px;    
+    padding: 20px; 
+    margin-bottom: 10px; 
 }
 
-#notas_tecnicas h4{
+.div_notas h4{
     display: inline-block;
     border:1px solid transparent;
     margin: 1px;
 }
 
-#notas_tecnicas p{
+.div_notas p{
     margin: 1px;
     font-size: 14px;
 }
@@ -242,9 +254,8 @@ a:active{
     border:1px solid transparent;
 }
 
-#notas_tecnicas table{
+.div_notas table{
     margin-top:5px;
-
 }
 
 .img-graficos-body{/*div de graficos y textos en pntje tecnico*/
@@ -253,8 +264,6 @@ a:active{
     width: 400px;
     height: 300px;
     margin-left: 40px;
-
-
 }
 
 .turno{
@@ -262,9 +271,14 @@ a:active{
 }
 
 /*____________________puntaje hse_________________________*/
-
+/*
 #notas_hse{
     border:1px solid transparent;   
+    margin:10px;    
+    background:#FFFFFF;
+    border-radius: 3px;    
+    padding: 10px;  
+    
 }
 
 #notas_hse h4{
@@ -291,7 +305,7 @@ a:active{
     text-align: center;
     width: 200px;
 }
-
+*/
 
 
 /*_________________ESTUDIANTES________________________*/
