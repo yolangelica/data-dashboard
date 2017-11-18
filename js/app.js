@@ -209,19 +209,6 @@ select_curso.appendChild(opt_sprint7ux);
 // que corresponde a nuestra generación 2017-II
 select_curso.selectedIndex = "4";
 
-
-
-
-var menu_vertical = document.getElementById('menu_user');
-
-function menu_user(){
-    menu_vertical.style.zIndex= '999999';
-    menu_vertical.style.display='block';
-}
-
-
-
-
 // MENU PARA SELECCIONAR CIUDAD
 // Llamamos al elemento contenedor
 var select_hse = document.getElementById('select_hse');
@@ -296,7 +283,7 @@ for (var i = 0; i < data.students.length; i++){
     var txt_name_student = document.createTextNode(data.students[i].name);
     name_student.appendChild(txt_name_student);
     var spcl_student = document.createElement('h5');
-    var txt_spcl_student = document.createTextNode('lol');
+    var txt_spcl_student = document.createTextNode(data.students[i].specialization);
     spcl_student.appendChild(txt_spcl_student);
     td_name.appendChild(name_student);
     td_name.appendChild(spcl_student);
@@ -315,7 +302,7 @@ for (var i = 0; i < data.students.length; i++){
 
     var td_english = document.createElement('td');
     var english_lvl = document.createElement('h5');
-    var txt_english = document.createTextNode('Nivel inglés');
+    var txt_english = document.createTextNode('Inglés intermedio');
     english_lvl.appendChild(txt_english);
     td_english.appendChild(english_lvl);
 
@@ -330,5 +317,23 @@ for (var i = 0; i < data.students.length; i++){
     }
 }
 
+var lookfor_students = document.getElementsByName('especialidad');
 
-
+lookfor_students[0].change = function(){
+    var lookfor_students = div_alls_students.toggle(div_students);
+    for (var i = 0; i< data.students.length; i++){
+        if (data.students[i].specialization != 'Plan común AM'){
+            div_students.style.display = 'none';
+        }    
+    }
+}
+/*
+function toggle-js(div){
+    var div = document.getElementById(div)
+    if (div.style.display == 'none') {
+    div.style.display = 'block'
+    } else {
+    div.style.display = 'none'
+    }
+    }
+*/

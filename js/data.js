@@ -8,6 +8,7 @@ var data = {
       'name': 'Donna Sloper',
       'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
       'active': true,
+      'specialization':'Plan común AM',
       'sprints': [
         {
           'number': 1,
@@ -27,7 +28,7 @@ var data = {
     },
     {
       'name': 'Roana Menego',
-      'photo': 'http://dummyimage.com/102x187.png/dddddd/000000',
+      'photo': 'http://dummyimage.com/162x148.png/dddddd/000000',
       'active': false,
       'sprints': []
     },
@@ -45,8 +46,9 @@ var data = {
     },
     {
       'name': 'Judy Meindl',
-      'photo': 'http://dummyimage.com/220x128.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
       'active': true,
+      'specialization':'Plan común AM',
       'sprints': [
         {
           'number': 1,
@@ -66,8 +68,9 @@ var data = {
     },
     {
       'name': 'Jillene Porch',
-      'photo': 'http://dummyimage.com/132x125.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
       'active': true,
+      'specialization':'Plan común AM',
       'sprints': [
         {
           'number': 1,
@@ -87,8 +90,9 @@ var data = {
     },
     {
       'name': 'Sydney Burlingham',
-      'photo': 'http://dummyimage.com/100x167.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
       'active': true,
+      'specialization':'Plan común PM',
       'sprints': [
         {
           'number': 1,
@@ -108,8 +112,9 @@ var data = {
     },
     {
       'name': 'Alexi Gindghill',
-      'photo': 'http://dummyimage.com/113x215.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
       'active': true,
+      'specialization':'Plan común PM',
       'sprints': [
         {
           'number': 1,
@@ -135,8 +140,9 @@ var data = {
     },
     {
       'name': 'Chiarra Dutton',
-      'photo': 'http://dummyimage.com/163x246.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
       'active': true,
+      'specialization':'Plan común PM',
       'sprints': [
         {
           'number': 1,
@@ -168,8 +174,9 @@ var data = {
     },
     {
       'name': 'Jacquelin Beglin',
-      'photo': 'http://dummyimage.com/184x226.png/cc0000/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/cc0000/ffffff',
       'active': true,
+      'specialization':'UX Design',
       'sprints': [
         {
           'number': 1,
@@ -189,7 +196,7 @@ var data = {
     },
     {
       'name': 'Dorella Simants',
-      'photo': 'http://dummyimage.com/189x105.png/dddddd/000000',
+      'photo': 'http://dummyimage.com/162x148.png/dddddd/000000',
       'active': false,
       'sprints': []
     },
@@ -201,8 +208,9 @@ var data = {
     },
     {
       'name': 'Collette Tubby',
-      'photo': 'http://dummyimage.com/203x162.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
       'active': true,
+      'specialization':'UX Design',
       'sprints': [
         {
           'number': 1,
@@ -222,8 +230,9 @@ var data = {
     },
     {
       'name': 'Dacey Bullers',
-      'photo': 'http://dummyimage.com/214x148.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
       'active': true,
+      'specialization':'Frontend Developer',
       'sprints': [
         {
           'number': 1,
@@ -243,8 +252,9 @@ var data = {
     },
     {
       'name': 'Leta Cuel',
-      'photo': 'http://dummyimage.com/214x104.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
       'active': true,
+      'specialization':'Frontend Developer',
       'sprints': [
         {
           'number': 1,
@@ -270,8 +280,9 @@ var data = {
     },
     {
       'name': 'Henrieta Osman',
-      'photo': 'http://dummyimage.com/146x182.png/dddddd/000000',
+      'photo': 'http://dummyimage.com/162x148.png/dddddd/000000',
       'active': true,
+      'specialization':'Frontend Developer',
       'sprints': [
         {
           'number': 1,
@@ -297,8 +308,9 @@ var data = {
     },
     {
       'name': 'Wilie Dunkinson',
-      'photo': 'http://dummyimage.com/244x133.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
       'active': true,
+      'specialization':'Plan común AM',      
       'sprints': [
         {
           'number': 1,
@@ -318,8 +330,9 @@ var data = {
     },
     {
       'name': 'Marisa Tumber',
-      'photo': 'http://dummyimage.com/127x179.png/dddddd/000000',
+      'photo': 'http://dummyimage.com/162x148.png/dddddd/000000',
       'active': true,
+      'specialization':'Plan común AM',
       'sprints': [
         {
           'number': 1,
@@ -339,8 +352,9 @@ var data = {
     },
     {
       'name': 'Arlina Flacke',
-      'photo': 'http://dummyimage.com/162x147.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
       'active': true,
+      'specialization':'UX Design',
       'sprints': [
         {
           'number': 1,
@@ -366,8 +380,9 @@ var data = {
     },
     {
       'name': 'Modesta Donnison',
-      'photo': 'http://dummyimage.com/247x228.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
       'active': true,
+      'specialization':'Frontend Developer',
       'sprints': [
         {
           'number': 1,
