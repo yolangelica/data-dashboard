@@ -256,6 +256,17 @@ a:active{
 
 .div_notas table{
     margin-top:5px;
+    border:1px solid transparent;
+}
+
+.div_notas td{
+    border:1px solid transparent;  
+    width:500px;
+}
+
+.chart{
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
 .img-graficos-body{/*div de graficos y textos en pntje tecnico*/

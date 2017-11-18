@@ -61,10 +61,9 @@
               <p>Sprint N°2 presenta más deserción en generaciones anteriores</p>
             </td>
           </tr>  
-        </table>
-     
+        </table>     
         <section class="graficos" id="graficos">
-            
+
           <div id='notas_tecnicas' class="div_notas" ><!--CONTENEDOR PRINCIPAL PUNTAJE TECNICO-->
             <h4>PUNTAJE TÉCNICO</h4><select name="select_curso" id="select_curso"></select>
 
@@ -78,12 +77,12 @@
                 <td>
                   <h4>90</h4>
                   <p>Estudiantes lograron el objetivo</p>
-                  <img class="img-graficos-body" src="assets/images/rectangular-graphic.png" alt="">
+                  <div id="Sarah_chart_div" class='chart'></div>
                 </td>
                 <td>
                   <h4>62%</h4>
                   <p>del total (135)</p>
-                  <img class="img-graficos-body" src="assets/images/circle-graphic.png" alt="">
+                  <div id="Anthony_chart_div" class='chart'></div>
                 </td>
               </tr>              
             </table>
@@ -160,7 +159,11 @@
     </nav>
 <!--______________SECCION GRAFICOS____________________________________-->
 
-    
+    <!-- Google charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages: ['corechart']});     
+   </script>
       <!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
