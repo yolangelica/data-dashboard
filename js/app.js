@@ -335,28 +335,28 @@ var lookfor_students = document.getElementsByName('especialidad');
 
 google.charts.setOnLoadCallback(drawSarahChart);
 
-      // Draw the pie chart for the Anthony's pizza when Charts is loaded.
+      // GRAFICO EVALUACIONES TECNICAS
       google.charts.setOnLoadCallback(drawAnthonyChart);
 
-      // Callback that draws the pie chart for Sarah's pizza.
+      // FUNCION EVALUACIONES TECNICAS BARRA
       function drawSarahChart() {
 
-        // Create the data table for Sarah's pizza.
+        //DA NOMBRES A LAS VARIABLES GRAFICO BARRA
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
         data.addRows([
-          ['Mushrooms', 1],
-          ['Onions', 1],
-          ['Olives', 2],
-          ['Zucchini', 2],
-          ['Pepperoni', 1]
+          ['Quiz1', 50],
+          ['ReQuiz', 90],
+          ['Reto', 60],
+          ['P. Final', 70],
+          ['Total Ev.Tec.', 70]
         ]);
         
 
         // Set options for Sarah's pie chart.
-        var options = {title:'How Much Pizza Sarah Ate Last Night',
-                       width:400,
+        var options = {title:'% de Alumnas que logran el 70% en Evaluaciones Técnicas',
+                       width:500,
                        height:300};
 
         // Instantiate and draw the chart for Sarah's pizza.
@@ -372,11 +372,11 @@ google.charts.setOnLoadCallback(drawSarahChart);
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
         data.addRows([
-          ['Mushrooms', 2],
-          ['Onions', 2],
-          ['Olives', 2],
-          ['Zucchini', 0],
-          ['Pepperoni', 3]
+          ['Quizz1', 2],
+          ['Quizz2', 2],
+          ['Reto', 2],
+          ['Producto Final', 0],
+          ['Promedio evaluaciones', 3]
         ]);
 
         // Set options for Anthony's pie chart.
