@@ -258,7 +258,6 @@ select_hse.selectedIndex = "4";
 
 var content_students = document.getElementById('contenedor_alumnas');
 var div_all_students = document.createElement('div');
-div_all_students.style.border= '1px solid cyan';
 div_all_students.style.display='inline-block';
 div_all_students.style.verticalAlign='top';
 
@@ -268,9 +267,10 @@ for (var i = 0; i < data.students.length; i++){
     if (data.students[i].sprints.length == 2){
 
     var div_students = document.createElement('div');
-    div_students.style.border= '1px solid pink';
+    div_students.setAttribute('class','div_students')
 
     var tab_student = document.createElement('table');
+    tab_student.setAttribute('id','tabla_estudiantes');
     var tr_student = document.createElement('tr');
 
     var td_student = document.createElement('td');
@@ -289,22 +289,36 @@ for (var i = 0; i < data.students.length; i++){
     td_name.appendChild(spcl_student);
 
     var td_tech_points = document.createElement('td');
-    var tech_points = document.createElement('h5');
+    var tech_points = document.createElement('h4');
     var txt_tech_points = document.createTextNode(data.students[i].sprints[0].score.tech);
     tech_points.appendChild(txt_tech_points);
+    var puntaje_tecnico = document.createElement('h5');
+    var txt_puntaje_tecnico = document.createTextNode('Pts técnicos');
+    puntaje_tecnico.appendChild(txt_puntaje_tecnico);
     td_tech_points.appendChild(tech_points);
+    td_tech_points.appendChild(puntaje_tecnico);
 
     var td_hse_points = document.createElement('td');
-    var hse_points = document.createElement('h5');
+    var hse_points = document.createElement('h4');
     var txt_hse_points = document.createTextNode(data.students[i].sprints[0].score.hse);
     hse_points.appendChild(txt_hse_points);
+    var puntaje_hse = document.createElement('h5');
+    var txt_puntaje_hse = document.createTextNode('Pts HSE');
+    puntaje_hse.appendChild(txt_puntaje_hse);
     td_hse_points.appendChild(hse_points);
+    td_hse_points.appendChild(puntaje_hse);
+    
 
     var td_english = document.createElement('td');
-    var english_lvl = document.createElement('h5');
-    var txt_english = document.createTextNode('Inglés intermedio');
+    var english_lvl = document.createElement('h4');
+    var txt_english = document.createTextNode('Intermedio');
     english_lvl.appendChild(txt_english);
+    var nvl_ingles = document.createElement('h5');
+    var txt_nvl_ingles = document.createTextNode('Nivel inglés');
+    nvl_ingles.appendChild(txt_nvl_ingles);
     td_english.appendChild(english_lvl);
+    td_english.appendChild(nvl_ingles);
+    
 
     tr_student.appendChild(td_student);
     tr_student.appendChild(td_name);
@@ -319,21 +333,12 @@ for (var i = 0; i < data.students.length; i++){
 
 var lookfor_students = document.getElementsByName('especialidad');
 
-lookfor_students[0].change = function(){
-    var lookfor_students = div_alls_students.toggle(div_students);
-    for (var i = 0; i< data.students.length; i++){
-        if (data.students[i].specialization != 'Plan común AM'){
-            div_students.style.display = 'none';
-        }    
+
+    for (var i = 0 ; i < data.students.length; i++){
+        if (lookfor_students[0].checked){
+            data.students[i].specialization.value='Plan común AM'
+        }
     }
-}
-/*
-function toggle-js(div){
-    var div = document.getElementById(div)
-    if (div.style.display == 'none') {
-    div.style.display = 'block'
-    } else {
-    div.style.display = 'none'
-    }
-    }
-*/
+
+
+    

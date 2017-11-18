@@ -5,13 +5,13 @@ html{
 body{
     margin:0 auto;
     height:100%;
-    border: 1px solid hotpink;
+    border: 1px solid transparent;
     font-family: 'Roboto', sans-serif;
 }
 
  .header{
      background-color: pink;
-     border:1px solid teal;
+     border:1px solid transparent;
      color:black;
  }
 
@@ -44,16 +44,17 @@ ul{
 /*__________________SELECCIONAR_______________*/
 
 #seleccionar{
-    border: 1px solid orange;
+    border: 1px solid transparent;
     width:87.5%;
     display: inline-block;
     margin-left: 160px;
 }
 
 #seleccionar_ciudad{
-    border: 1px solid greenyellow;
+    border: 1px solid transparent;
     width:280px;
     display: inline-block;
+    height:43px;
 }
 
 #select_ciudad{
@@ -66,7 +67,7 @@ ul{
 }
 
 #seleccionar_generacion{
-    border:1px solid red;
+    border:1px solid transparent;
     width:120px;
     display: inline-block;
 }
@@ -130,7 +131,7 @@ div.tab button.active {
 }
 
 #overview{
-    border:1px solid green;
+    border:1px solid transparent;
 }
 
 #overview td{
@@ -153,7 +154,7 @@ div.tab button.active {
     width:156px;
     position: fixed ;
     top:0px !important;
-    border:1px solid yellow;
+    border:1px solid transparent;
     height:90%;
     background-color: white;
 }
@@ -162,13 +163,12 @@ div.tab button.active {
 	list-style: none;/*le quita el estilo a la lista (Estilo puntos)*/
 	margin: 0;
 	padding: 0;
-	line-height: 24px;	
+	line-height: 50px;	
 }
 
 .nav-menu-vertical ul li{
 	background: #f5f5f0;
-	display: inline;
-	widows: 150px;
+    display: inline;
 	}
 	
 a{	
@@ -183,7 +183,9 @@ a:hover {
 }
 
 .usuario{
-	background:#f9a91a;
+    background:#f9a91a;
+	line-height: 24px !important;	
+    
 }
 
 .usuario a {
@@ -221,13 +223,13 @@ a:active{
 }
 
 #notas_tecnicas{
-    border:3px solid orange;   /*distingue el alcance del contenedor*/
+    border:3px solid transparent;   /*distingue el alcance del contenedor*/
  	background:#FFFFFF;
 }
 
 #notas_tecnicas h4{
     display: inline-block;
-    border:1px solid teal;
+    border:1px solid transparent;
     margin: 1px;
 }
 
@@ -237,7 +239,7 @@ a:active{
 }
 
 #select_curso{/*selecciona Sprint en puntaje tecnico*/
-    border:1px solid turquoise;
+    border:1px solid transparent;
 }
 
 #notas_tecnicas table{
@@ -262,12 +264,12 @@ a:active{
 /*____________________puntaje hse_________________________*/
 
 #notas_hse{
-    border:1px solid brown;   
+    border:1px solid transparent;   
 }
 
 #notas_hse h4{
     display: inline-block;
-    border:1px solid teal;
+    border:1px solid transparent;
     margin: 1px;
 }
 
@@ -277,7 +279,7 @@ a:active{
 }
 
 #select_hse{
-    border:1px solid turquoise;
+    border:1px solid transparent;
 }
 
 #notas_hse table{
@@ -285,7 +287,7 @@ a:active{
 }
 
 #notas_hse td{
-    border: 1px solid palevioletred;
+    border: 1px solid transparent;
     text-align: center;
     width: 200px;
 }
@@ -295,11 +297,46 @@ a:active{
 /*_________________ESTUDIANTES________________________*/
 
 #contenedor_alumnas{
-    border:1px dotted dodgerblue;
+    border:1px dotted transparent;
 }
 
 #especialidades{
-    border:1px dotted darkorchid;
+    border:1px dotted transparent;
     width: 200px;
     display: inline-block;
+}
+.div_students{
+    margin: 0px 0px 20px 50px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#tabla_estudiantes {
+    background-color: white;
+}
+
+#tabla_estudiantes tr{
+    background-color: white;
+}
+
+#tabla_estudiantes td{
+    border:none;
+    width:120px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#tabla_estudiantes h4{
+    margin: 10px 5px 0px;
+    padding: 5px;
+    background-color: lightgrey;
+    border-radius: 3px 3px 0px 0px;
+}
+
+#tabla_estudiantes h5{
+    margin: 0px 5px;
+    padding: 5px;
+    background-color: lightgrey;
+    border-radius: 0px 0px 3px 3px;
 }

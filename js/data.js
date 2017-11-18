@@ -6,7 +6,7 @@ var data = {
   'students': [
     {
       'name': 'Donna Sloper',
-      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Plan común AM',
       'sprints': [
@@ -28,7 +28,7 @@ var data = {
     },
     {
       'name': 'Roana Menego',
-      'photo': 'http://dummyimage.com/162x148.png/dddddd/000000',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': false,
       'sprints': []
     },
@@ -46,7 +46,7 @@ var data = {
     },
     {
       'name': 'Judy Meindl',
-      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Plan común AM',
       'sprints': [
@@ -68,7 +68,7 @@ var data = {
     },
     {
       'name': 'Jillene Porch',
-      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Plan común AM',
       'sprints': [
@@ -90,7 +90,7 @@ var data = {
     },
     {
       'name': 'Sydney Burlingham',
-      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Plan común PM',
       'sprints': [
@@ -112,7 +112,7 @@ var data = {
     },
     {
       'name': 'Alexi Gindghill',
-      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Plan común PM',
       'sprints': [
@@ -140,7 +140,7 @@ var data = {
     },
     {
       'name': 'Chiarra Dutton',
-      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Plan común PM',
       'sprints': [
@@ -174,7 +174,7 @@ var data = {
     },
     {
       'name': 'Jacquelin Beglin',
-      'photo': 'http://dummyimage.com/162x148.png/cc0000/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'UX Design',
       'sprints': [
@@ -208,7 +208,7 @@ var data = {
     },
     {
       'name': 'Collette Tubby',
-      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'UX Design',
       'sprints': [
@@ -230,7 +230,7 @@ var data = {
     },
     {
       'name': 'Dacey Bullers',
-      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Frontend Developer',
       'sprints': [
@@ -252,7 +252,7 @@ var data = {
     },
     {
       'name': 'Leta Cuel',
-      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Frontend Developer',
       'sprints': [
@@ -280,7 +280,7 @@ var data = {
     },
     {
       'name': 'Henrieta Osman',
-      'photo': 'http://dummyimage.com/162x148.png/dddddd/000000',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Frontend Developer',
       'sprints': [
@@ -308,7 +308,7 @@ var data = {
     },
     {
       'name': 'Wilie Dunkinson',
-      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Plan común AM',      
       'sprints': [
@@ -330,7 +330,7 @@ var data = {
     },
     {
       'name': 'Marisa Tumber',
-      'photo': 'http://dummyimage.com/162x148.png/dddddd/000000',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Plan común AM',
       'sprints': [
@@ -352,7 +352,7 @@ var data = {
     },
     {
       'name': 'Arlina Flacke',
-      'photo': 'http://dummyimage.com/162x148.png/ff4444/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'UX Design',
       'sprints': [
@@ -380,7 +380,7 @@ var data = {
     },
     {
       'name': 'Modesta Donnison',
-      'photo': 'http://dummyimage.com/162x148.png/5fa2dd/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
       'active': true,
       'specialization':'Frontend Developer',
       'sprints': [
