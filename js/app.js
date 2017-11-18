@@ -346,7 +346,7 @@ google.charts.setOnLoadCallback(drawSarahChart);
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
         data.addRows([
-          ['Quiz1', 50],
+          ['Quiz1', 50],//da parametro a variable
           ['ReQuiz', 90],
           ['Reto', 60],
           ['P. Final', 70],
