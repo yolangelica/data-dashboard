@@ -54,7 +54,7 @@ ul{
     border: 1px solid transparent;
     width:280px;
     display: inline-block;
-    height:45px;
+    height:42px;
 }
 
 #select_ciudad{
@@ -125,7 +125,7 @@ div.tab button.active {
 .info-general{/*modifica los contenedores superiores de esta pestaña*/
 	border:1px solid black;
 	display: inline-block;
-	width: 250px;
+	width: 200px;
 	height: 180px;
 	background: #FFFFFF;
 }
@@ -149,7 +149,7 @@ div.tab button.active {
 }
 
 #overview p{
-    font-size: 14px;
+    font-size: 12px;
     margin:4px;
 }
 
