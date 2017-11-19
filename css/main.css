@@ -319,16 +319,10 @@ a:active{
 */
 /*_______________GRAFICOS HSE_________________________*/
 
-.div_chart{
-	width: 100%;
-
+#donutchart{
+	margin-left:80px;
+	position: absolute;
 }
-
-
-
-svg[Attributes Style]{width: 500;
-    height: 200;}
-
 /*_________________ESTUDIANTES________________________*/
 
 #contenedor_alumnas{
