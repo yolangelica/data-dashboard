@@ -13,7 +13,19 @@
       <nav>
         <ul>
           <li class="li-logo-laboratoria"><img class="logo-laboratoria" src="assets/images/logo-laboratoria.svg" alt=""> </li><!--logo laboratoria-->
-          <li class="icono-menu"><i class="fa fa-bars fa-2x" aria-hidden="true" onclick="menu_user()"></i></li><!--icono menu-->
+  <!--_____________NAVEGADOR FULL SCREEN____________________________________-->
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">Setting</a>
+              <a href="#">Home</a>
+              <a href="#">Sedes</a>
+              <a href="#">Generaciones</a>
+              <a href="#">Alumnas</a>
+              <a href="#">About</a>
+            </div>
+          </div>
+            <span style="margin-left: 1200px; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </ul>
       </nav>
     </header>
@@ -110,7 +122,7 @@
                 <td>
                   <h4>62</h4>
                   <p>estudiantes lograron el obejtivo</p><br>
-                  <div id="donutchart" style="width: 900px; height: 200px;"></div>
+                  <div class="div_chart" id="chart_div2"></div>
                  <!-- <img class="img-graficos-body" src="assets/images/circle-graphic.png" alt="">-->
                 </td>
               </tr>              
@@ -125,8 +137,11 @@
         <div id='contenedor_alumnas'>  <!-- DIV para poner lista de alumnas segun especializacion -->
           <div id="especialidades">
               <h3>ESPECIALIZACION</h3>
+              <input type="text" name="search" placeholder="Search Student"><!--Busca estudiantes-->
+              <br>
               <input type="checkbox" name="especialidad" value="am" checked>Plan común AM <br>
-              <input type="checkbox" name="especialidad" value="pm" checked>Plan común PM <br>             
+              <input type="checkbox" name="especialidad" value="pm" checked>Plan común PM <br>
+
               <input type="checkbox" name="especialidad" value="ux" checked>UX Design <br>
               <input type="checkbox" name="especialidad" value="js" checked>Frontend Developer <br>              
           </div>

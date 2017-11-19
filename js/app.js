@@ -420,23 +420,35 @@ google.charts.setOnLoadCallback(drawSarahChart);
   }
 
 //Grafico Donut HSE
-google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
+google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
-        var options = {
-          title: 'My Daily Activities',
-          pieHole: 0.4,
-        };
+    function drawChart() {
 
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'nivel');
+      data.addColumn('number', 'Populartiy');
+      data.addRows([
+        ['Nivel Alto [90-100]', 2],
+        ['Nivel Medio Alto [70-89]', 2],
+        ['Nivel Medio [50-69]', 2],
+        ['Nivel Medio bajo [30-49]', 0],
+        ['Nivel Bajo [0-29]', 3]
+      ]);
+
+      var options = {
+        title: '% de Alumnas por Nivel de Evaluación',
+        sliceVisibilityThreshold: .2
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div2'));
+      chart.draw(data, options);
+    }
+    //NAVEGADOR
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
