@@ -276,43 +276,10 @@ a:active{
     display: inline-block;
 }
 
-/*____________________puntaje hse_________________________*/
-/*
-#notas_hse{
-    border:1px solid transparent;   
-    margin:10px;    
-    background:#FFFFFF;
-    border-radius: 3px;    
-    padding: 10px;  
-    
+#Sarah_chart_div.chart div div div svg g g rect{
+    fill:orange;
 }
 
-#notas_hse h4{
-    display: inline-block;
-    border:1px solid transparent;
-    margin: 1px;
-}
-
-#notas_hse p{
-    margin: 1px;
-    font-size: 14px;
-}
-
-#select_hse{
-    border:1px solid transparent;
-}
-
-#notas_hse table{
-    margin-top:5px;
-}
-
-#notas_hse td{
-    border: 1px solid transparent;
-    text-align: center;
-    width: 200px;
-}
-*/
-/*_______________GRAFICOS HSE_________________________*/
 
 
 /*_________________ESTUDIANTES________________________*/
@@ -603,6 +570,7 @@ html {
     text-decoration: none;
     cursor: pointer;
 }
+
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){

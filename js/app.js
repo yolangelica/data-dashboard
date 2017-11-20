@@ -349,15 +349,13 @@ google.charts.setOnLoadCallback(drawAnthonyChart);
 function drawSarahChart() {
 
 //DA NOMBRES A LAS VARIABLES GRAFICO BARRA
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Topping');
-    data.addColumn('number', 'Notas');
-    data.addRows([        
-        ['Quiz1', 50],//da parametro a variable
-        ['ReQuiz', 90],
-        ['Reto', 60],
-        ['P. Final', 70],
-        ['Total Ev.Tec.', 70]
+    var data = google.visualization.arrayToDataTable([
+        ['Ítem','Porcentaje',{role:'style'}],       
+        ['Quiz1', 50, 'orange'],//da parametro a variable
+        ['ReQuiz', 90,'orange'],
+        ['Reto', 60,'orange'],
+        ['P. Final', 70,'orange'],
+        ['Total Ev.Tec.', 70,'orange']
     ]);
 
 // tamaño contenedor grafico barra
@@ -389,7 +387,15 @@ function drawAnthonyChart() {
     // tamaño contenedor grafico torta
     var options = {title:'% de Alumnas por Nivel de Evaluación',
                     width:450,
-                    height:300};
+                    height:300,
+                    slices: {
+                        0: { color: 'yellow' },
+                        1: { color: 'orange' },
+                        2: { color: 'gray'},
+                        3: { color: ''},
+                        4: { color: 'lightgray'}, 
+                      }
+                };
 
     // 
     var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
@@ -409,7 +415,7 @@ function drawVisualization() {
         ['Sprint', 'Trabajo equipo', 'Comunicacion', 'Manejo estrés', 'PROMEDIO'],
         ['Sprint1',  60,      75,         60,          70],
         ['Sprint2',  50,      60,        100,          75],
-        ['Sprint3',  55,      90,         70,          80],         
+        ['Sprint3',  55,      90,         70,          80]
     ]);
 
     var options = {
@@ -418,6 +424,7 @@ function drawVisualization() {
         hAxis: {title: '2017 II'},
         seriesType: 'bars',
         series: {5: {type: 'line'}},
+        colors: ['yellow', 'orange', 'grey', 'lightgray']
     };
 
     var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
@@ -443,7 +450,14 @@ function drawChart() {
 
     var options = {
     title: '% de Alumnas por Nivel de Evaluación',
-    sliceVisibilityThreshold: .2
+    sliceVisibilityThreshold: .2,
+    slices: {
+        0: { color: 'yellow' },
+        1: { color: 'orange' },
+        2: { color: 'gray'},
+        3: { color: ''},
+        4: { color: 'lightgray'}, 
+      }
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('chart_div2'));
