@@ -267,7 +267,7 @@ for (var i = 0; i < data.students.length; i++){
     if (data.students[i].sprints.length == 2){
 
     var div_students = document.createElement('div');
-    div_students.setAttribute('class','div_students')
+    div_students.setAttribute('class','div_students');
 
     var tab_student = document.createElement('table');
     tab_student.setAttribute('id','tabla_estudiantes');
@@ -332,6 +332,15 @@ for (var i = 0; i < data.students.length; i++){
 }
 
 google.charts.setOnLoadCallback(drawSarahChart);
+//funcion boton eliminar estudiantes
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
       //___________________ GRAFICO EVALUACIONES TECNICAS_______________________
 google.charts.setOnLoadCallback(drawAnthonyChart);
@@ -449,7 +458,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-/*______________PROBANDO AMPLIAR IMAGENES______________________---*/
+/*______________AMPLIACION FULL GRAFICOS PESTAÑA INFO______________________---*/
 // Get the modal
 var modal = document.getElementById('myModal');
 

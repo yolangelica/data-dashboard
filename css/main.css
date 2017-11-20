@@ -317,7 +317,18 @@ a:active{
 
 /*_________________ESTUDIANTES________________________*/
 
-input[type=text] {/*Input Busqueda estudiantes*/
+/*modifica boton remover alumnas*/
+
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+/*Input Busqueda estudiantes*/
+input[type=text] {
     width: 130px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
