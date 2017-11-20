@@ -308,7 +308,6 @@ for (var i = 0; i < data.students.length; i++){
     td_hse_points.appendChild(hse_points);
     td_hse_points.appendChild(puntaje_hse);
     
-
     var td_english = document.createElement('td');
     var english_lvl = document.createElement('h4');
     var txt_english = document.createTextNode('Intermedio');
@@ -319,6 +318,13 @@ for (var i = 0; i < data.students.length; i++){
     td_english.appendChild(english_lvl);
     td_english.appendChild(nvl_ingles);
     
+    var btn_eliminar = document.createElement('button');
+    btn_eliminar.setAttribute('class','btn_eliminar');
+    var txt_btn = document.createTextNode('Eliminar');
+    btn_eliminar.appendChild(txt_btn);
+
+    td_english.appendChild(btn_eliminar);
+
 
     tr_student.appendChild(td_student);
     tr_student.appendChild(td_name);
