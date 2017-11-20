@@ -351,9 +351,11 @@ input[type=text]:focus {
     border-radius: 0px 0px 3px 3px;
 }
 
-.btn_eliminar{
+.btn_eliminar, .btn_modificar{
     margin-top:50px;
 }
+
+
 
 
 /*_________PESTAÑA PROFESORES info e imagenes________*/

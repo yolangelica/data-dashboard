@@ -323,7 +323,15 @@ for (var i = 0; i < data.students.length; i++){
     var txt_btn = document.createTextNode('Eliminar');
     btn_eliminar.appendChild(txt_btn);
 
+
     td_english.appendChild(btn_eliminar);
+
+    var btn_modificar=document.createElement('button');
+    btn_modificar.setAttribute('class', 'btn_modificar');
+    var txt_mod =document.createTextNode('Modificar');
+    btn_modificar.appendChild(txt_mod);
+
+    td_hse_points.appendChild(btn_modificar);
 
 
     tr_student.appendChild(td_student);
@@ -623,4 +631,4 @@ function myFunction1() {
     element.classList.toggle("hidden_notes");
  }
 
-/*______________________PROBANDO AGREGAR*/
+
