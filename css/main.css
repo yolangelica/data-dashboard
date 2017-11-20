@@ -598,3 +598,18 @@ html {
 .div_nota_indiviual{
     display: none;
 }
+/*___________________________________-*/
+/*modificar info general profesores*/
+
+.contenedor-info-profes{
+	margin-left: 100px;
+}
+.info-profes{
+	display: inline-block;
+	border: 1px solid black;
+	padding: 20px;
+
+}
+.checked {/*estrella*/
+    color: orange;
+}

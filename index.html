@@ -168,28 +168,24 @@
 
       <div id="teachers" class="tabcontent"><!--PESTAÑA LISTA DE PROFESORES-->
           <h3>PROFESORES</h3>
-          <table>
-            <tbody>
-              <tr>
-                <td class="info-general">
-                  <h4>EVALUACION PROFES AM PM</h4>
-                  <img class="graficos-superiores" src="assets/images/circle-graphic.png" alt="">
-                  <p> 50% alcanzan nota minima</p>
-                </td>
-              </tr>
+          <div class="contenedor-info-profes" >
+            <div class="info-profes">
+              <h4>EVALUACION PROMEDIO AM-PM</h4>
+              <img src="assets/images/bar-graph.png" alt="">
+              <p>90% alcanzan porcentaje mínimo 75%</p>
+            </div>
+            <div class="info-profes">
+              <h4>EVALUACION PROFESORES AM</h4>
+              <img src="assets/images/bar-graph.png" alt="">
+              <p>80% alcanzan porcentaje minimo 75%</p>
+            </div>
+            <div class="info-profes">
+              <h4>EVALUACION PROFESORES PM</h4>
+              <img src="assets/images/bar-graph.png" alt="">
+              <p>95% alcanzan porcentaje mínimo 75%</p>
+            </div>
 
-                <td class="info-general">
-                  <h4>Evaluacion profes AM</h4>
-                  <img class="graficos-superiores" src="assets/images/bar-graph.png" alt="">
-                  <p> 70% profes alcanzan nota minima</p>
-                </td>
-                <td class="info-general">
-                  <h4>Evaluacion profes PM</h4>
-                  <img class="graficos-superiores" src="assets/images/bar-graph.png" alt="">
-                  <p> 70% profes alcanzan nota minima</p>
-                </td>
-            </tbody>
-          </table>
+          </div>
           <p>Lista de profesores</p>
           <form action="/action_page.php" method="get" class="turno" id='turno_profes'><!--Agrega Checkbox para seleccionar horario AM o PM-->
             <input type="checkbox" name="turno" value="AM" checked>Turno AM
@@ -205,10 +201,16 @@
                 <p class="title">Teacher PM</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                 <p>belen@laboratoria.la</p>
-                <p><button class="button" onclick="myFunction1()">Contact</button></p>
+                <p><button class="button" onclick="myFunction1()">+ Info</button></p>
                 <div id="myDIV1" class='div_nota_indiviual'>
+                  <img src="assets/images/bar-graph.png" alt="">
                   <p>Nota profesor: 4</p>
                   <p>Nota jedi: 4.5</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
                 </div>
               </div>
             </div>
@@ -222,10 +224,16 @@
                 <p class="title">Teacher PM</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                 <p>allison@laboratoria.la</p>
-                <p><button class="button" onclick="myFunction2()">Contact</button></p>
+                <p><button class="button" onclick="myFunction2()">+ Info</button></p>
                 <div id="myDIV2" class='div_nota_indiviual'>
+                  <img src="assets/images/bar-graph.png" alt="">
                   <p>Nota profesor: 4</p>
                   <p>Nota jedi: 4.5</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
                 </div>
                 
               </div>
@@ -239,9 +247,15 @@
                 <p class="title">Teacher PM</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                 <p>marcia@laboratoria.la</p>
-                <p><button class="button" onclick="myFunction3()">Contact</button></p>
+                <p><button class="button" onclick="myFunction3()">+ Info</button></p>
                 <div id="myDIV3" class='div_nota_indiviual'>
+                  <img src="assets/images/bar-graph.png" alt="">
                   <p>Nota profesor: 4</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
                   <p>Nota jedi: 4.5</p>
                 </div>
                 
