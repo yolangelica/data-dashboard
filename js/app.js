@@ -555,6 +555,7 @@ span.onclick = function() {
 var profesores_div = document.getElementById('teachers');
 var profesores_turno = document.getElementById('turno_profes');
 
+// Fórmula para promedio de nota de profesores y jedi
 var promedio_profe = (data.ratings[0].teacher+data.ratings[1].teacher)/2;
 var promedio_jedi = (data.ratings[0].jedi+data.ratings[1].jedi)/2;
 
@@ -581,6 +582,7 @@ profesores_div.insertBefore(div_profe_jedi,profesores_turno);
 function myFunction1() {
     var element = document.getElementById("myDIV1");
     element.classList.toggle("hidden_notes");
+    
  }
 
  function myFunction2() {
