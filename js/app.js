@@ -342,8 +342,8 @@ function drawSarahChart() {
 //DA NOMBRES A LAS VARIABLES GRAFICO BARRA
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Topping');
-    data.addColumn('number', 'Slices');
-    data.addRows([
+    data.addColumn('number', 'Notas');
+    data.addRows([        
         ['Quiz1', 50],//da parametro a variable
         ['ReQuiz', 90],
         ['Reto', 60],
@@ -577,12 +577,11 @@ profesores_div.insertBefore(div_profe_jedi,profesores_turno);
 
 //______________ NOTA PROFESOR Y JEDI ____________________
 
-
+// Funciones para mostrar y esconder las notas de los profesores
 
 function myFunction1() {
     var element = document.getElementById("myDIV1");
     element.classList.toggle("hidden_notes");
-    
  }
 
  function myFunction2() {
