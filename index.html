@@ -164,7 +164,7 @@
       <div id="teachers" class="tabcontent"><!--PESTAÑA LISTA DE PROFESORES-->
           <h3>PROFESORES</h3>
           <p>Lista de profesores</p>
-          <form action="/action_page.php" method="get" class="turno"><!--Agrega Checkbox para seleccionar horario AM o PM-->
+          <form action="/action_page.php" method="get" class="turno" id='turno_profes'><!--Agrega Checkbox para seleccionar horario AM o PM-->
             <input type="checkbox" name="turno" value="AM" checked>Turno AM
             <input type="checkbox" name="turno" value="PM" checked>Turno PM
           </form>
@@ -178,7 +178,8 @@
                 <p class="title">Teacher PM</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                 <p>belen@laboratoria.la</p>
-                <p><button class="button">Contact</button></p>
+                <p><button class="button" onclick="myFunction1()">Contact</button></p>
+                <div id="myDIV1"></div>
               </div>
             </div>
           </div>
@@ -191,7 +192,9 @@
                 <p class="title">Teacher PM</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                 <p>allison@laboratoria.la</p>
-                <p><button class="button">Contact</button></p>
+                <p><button class="button" onclick="myFunction2()">Contact</button></p>
+                <div id="myDIV2"></div>
+                
               </div>
             </div>
           </div>
@@ -203,7 +206,9 @@
                 <p class="title">Teacher PM</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                 <p>marcia@laboratoria.la</p>
-                <p><button class="button">Contact</button></p>
+                <p><button class="button" onclick="myFunction3()">Contact</button></p>
+                <div id="myDIV3"></div>
+                
               </div>
             </div>
           </div>

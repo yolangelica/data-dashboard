@@ -448,6 +448,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+<<<<<<< b00b4436ca54c7289298bd3f98ac58fb95cd0df9
 /*______________PROBANDO AMPLIAR IMAGENES______________________---*/
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -546,3 +547,49 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
 }
+
+
+
+//______________ NOTA PROFESOR Y JEDI ____________________
+
+var profesores_div = document.getElementById('teachers');
+var profesores_turno = document.getElementById('turno_profes');
+
+var promedio_profe = (data.ratings[0].teacher+data.ratings[1].teacher)/2;
+var promedio_jedi = (data.ratings[0].jedi+data.ratings[1].jedi)/2;
+
+var div_profe_jedi = document.createElement('div');
+div_profe_jedi.setAttribute('id','div_profe_jedi');
+var p_profe = document.createElement('p');
+var txt_p_profe = document.createTextNode('Puntuación promedio profesores: '+ promedio_profe);
+p_profe.appendChild(txt_p_profe);
+
+var p_jedi = document.createElement('p');
+var txt_p_jedi = document.createTextNode('Puntuación promedio jedi: '+promedio_jedi);
+p_jedi.appendChild(txt_p_jedi);
+
+div_profe_jedi.appendChild(p_profe);
+div_profe_jedi.appendChild(p_jedi);
+
+profesores_div.insertBefore(div_profe_jedi,profesores_turno); 
+
+
+//______________ NOTA PROFESOR Y JEDI ____________________
+
+
+
+function myFunction1() {
+    var element = document.getElementById("myDIV1");
+    element.classList.toggle("hidden_notes");
+ }
+
+ function myFunction2() {
+    var element = document.getElementById("myDIV2");
+    element.classList.toggle("hidden_notes");
+ }
+
+ function myFunction3() {
+    var element = document.getElementById("myDIV3");
+    element.classList.toggle("hidden_notes");
+ }
+

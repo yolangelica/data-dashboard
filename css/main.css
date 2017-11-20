@@ -395,13 +395,32 @@ html {
     display: block;
   }
 }
+#div_profe_jedi{
+    background-color: white;
+    width: 1080px;
+    border-radius: 3px 3px 0px 0px;
+    padding: 15px 0px 20px 20px;
+    margin: 0px 0px 0px 8px ;
+    line-height: 12px;
+}
+
+#turno_profes{
+    background-color: white;
+    border-radius: 0px 0px 3px 3px;
+    padding: 15px 20px 15px 20px;
+    margin: 0px 0px 0px 8px ;
+    width: 1080px;
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);/*efecto sombra*/
+  margin-top:20px;
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 3px;  
 }
 
 .img-teacher{/*tamaño imagen*/
-	
     border-radius: 15px;
     width: 200px;
     height: 200px;
@@ -410,6 +429,7 @@ html {
 
 .container {
   padding: 0 16px;
+  background-color: white;
 }
 
 .container::after, .row::after {
@@ -488,6 +508,7 @@ html {
     right: 35px;
   }
 }
+
 /*_____________AMPLIAR  IMAGEN GRAFICOS INFO GENERAL AL SELECCIONAR_________*/
 #myImg, #myImg2, #myImg3, #myImg4, #myImg5 {
     border-radius: 5px;
@@ -577,4 +598,15 @@ html {
     .modal-content {
         width: 100%;
     }
+
+
+.hidden_notes{    
+    width: 100%;
+    padding: 25px;
+    background-color: #FFCA00;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
 }
