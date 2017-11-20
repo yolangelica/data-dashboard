@@ -448,7 +448,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-<<<<<<< b00b4436ca54c7289298bd3f98ac58fb95cd0df9
+
 /*______________PROBANDO AMPLIAR IMAGENES______________________---*/
 // Get the modal
 var modal = document.getElementById('myModal');
