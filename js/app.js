@@ -317,6 +317,8 @@ for (var i = 0; i < data.students.length; i++){
     nvl_ingles.appendChild(txt_nvl_ingles);
     td_english.appendChild(english_lvl);
     td_english.appendChild(nvl_ingles);
+
+    //agrega boton eliminar estudiantes
     
     var btn_eliminar = document.createElement('button');
     btn_eliminar.setAttribute('class','btn_eliminar');
@@ -326,13 +328,16 @@ for (var i = 0; i < data.students.length; i++){
 
     td_english.appendChild(btn_eliminar);
 
+
+    //agrega boton modificar a estudiantes
+
     var btn_modificar=document.createElement('button');
     btn_modificar.setAttribute('class', 'btn_modificar');
     var txt_mod =document.createTextNode('Modificar');
     btn_modificar.appendChild(txt_mod);
 
     td_hse_points.appendChild(btn_modificar);
-
+//_______________________________________________
 
     tr_student.appendChild(td_student);
     tr_student.appendChild(td_name);
@@ -344,6 +349,7 @@ for (var i = 0; i < data.students.length; i++){
     div_all_students.appendChild(div_students);
     }
 }
+
 
 google.charts.setOnLoadCallback(drawSarahChart);
 //funcion boton eliminar estudiantes

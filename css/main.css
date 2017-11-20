@@ -285,14 +285,17 @@ a:active{
 /*_________________ESTUDIANTES________________________*/
 
 /*modifica boton agregar alumnas*/
-
+.btn_agregar, .btn_modificar, .btn_eliminar{
+	background:#FFC107 ;
+	color:black;
+	padding:5px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
 /*______________________________*/
 
 
-#myDIV {
-    width: 100%;
-    margin-top: 0px;
-}
+
 
 /*Input Busqueda estudiantes*/
 input[type=text] {
@@ -604,12 +607,13 @@ html {
 /*modificar info general profesores*/
 
 .contenedor-info-profes{
-	margin-left: 100px;
+	margin-left: 70px;
 }
 .info-profes{
 	display: inline-block;
-	border: 1px solid black;
+	border: 1px solid #ECEBEB;
 	padding: 20px;
+	background: #FFFFFF;
 
 }
 .checked {/*estrella*/
