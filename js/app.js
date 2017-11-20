@@ -331,121 +331,117 @@ for (var i = 0; i < data.students.length; i++){
     }
 }
 
-var lookfor_students = document.getElementsByName('especialidad');
-
 google.charts.setOnLoadCallback(drawSarahChart);
 
       //___________________ GRAFICO EVALUACIONES TECNICAS_______________________
-      google.charts.setOnLoadCallback(drawAnthonyChart);
+google.charts.setOnLoadCallback(drawAnthonyChart);
 
       // FUNCION EVALUACIONES TECNICAS BARRA
-      function drawSarahChart() {
+function drawSarahChart() {
 
-        //DA NOMBRES A LAS VARIABLES GRAFICO BARRA
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-          ['Quiz1', 50],//da parametro a variable
-          ['ReQuiz', 90],
-          ['Reto', 60],
-          ['P. Final', 70],
-          ['Total Ev.Tec.', 70]
-        ]);
-        
+//DA NOMBRES A LAS VARIABLES GRAFICO BARRA
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+        ['Quiz1', 50],//da parametro a variable
+        ['ReQuiz', 90],
+        ['Reto', 60],
+        ['P. Final', 70],
+        ['Total Ev.Tec.', 70]
+    ]);
 
-        // tamaño contenedor grafico barra
-        var options = {title:'% de Alumnas que logran el 70% en Evaluaciones Técnicas',
-                       width:500,
-                       height:300};
+// tamaño contenedor grafico barra
+    var options = {title:'% de Alumnas que logran el 70% en Evaluaciones Técnicas',
+                    width:500,
+                    height:300
+                    };
 
-        // Instantiate and draw the chart for Sarah's pizza.
-        var chart = new google.visualization.BarChart(document.getElementById('Sarah_chart_div'));
-        chart.draw(data, options);
-      }
+    // Instantiate and draw the chart for Sarah's pizza.
+    var chart = new google.visualization.BarChart(document.getElementById('Sarah_chart_div'));
+    chart.draw(data, options);
+}
 
       // función grafico torta Evaluacion por Nivel 
-      function drawAnthonyChart() {
+function drawAnthonyChart() {
 
-        // ______________GRAFICO TORTA
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-          ['Nivel Alto [90-100]', 2],
-          ['Nivel Medio Alto [70-89]', 2],
-          ['Nivel Medio [50-69]', 2],
-          ['Nivel Medio bajo [30-49]', 0],
-          ['Nivel Bajo [0-29]', 3]
-        ]);
-
-        // tamaño contenedor grafico torta
-        var options = {title:'% de Alumnas por Nivel de Evaluación',
-                       width:450,
-                       height:300};
-
-        // 
-        var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
-        chart.draw(data, options);
-      }
-
-      //____________GRAFICO EVALUACIONES HSE_____________________________
-
-      //grafico barras
-    
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawVisualization);
-
-      function drawVisualization() {
-        // Some raw data (not necessarily accurate)
-        var data = google.visualization.arrayToDataTable([
-         ['Month', 'Trabajo equipo', 'Comunicacion', 'Manejo estrés', 'PROMEDIO'],
-         ['Sprint1',  60,      75,         60,          70],
-         ['Sprint2',  50,      60,        100,          75],
-         ['Sprint3',  55,      90,         70,          80],
-         
-         
-      ]);
-
-    var options = {
-      title : 'Evaluación por Sprint',
-      vAxis: {title: '%Evaluación'},
-      hAxis: {title: '2017 II'},
-      seriesType: 'bars',
-      series: {5: {type: 'line'}}
-    };
-
-    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-  }
-
-//Grafico Donut HSE
-google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'nivel');
-      data.addColumn('number', 'Populartiy');
-      data.addRows([
+    // ______________GRAFICO TORTA
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
         ['Nivel Alto [90-100]', 2],
         ['Nivel Medio Alto [70-89]', 2],
         ['Nivel Medio [50-69]', 2],
         ['Nivel Medio bajo [30-49]', 0],
         ['Nivel Bajo [0-29]', 3]
-      ]);
+    ]);
 
-      var options = {
-        title: '% de Alumnas por Nivel de Evaluación',
-        sliceVisibilityThreshold: .2
-      };
+    // tamaño contenedor grafico torta
+    var options = {title:'% de Alumnas por Nivel de Evaluación',
+                    width:450,
+                    height:300};
 
-      var chart = new google.visualization.PieChart(document.getElementById('chart_div2'));
-      chart.draw(data, options);
-    }
+    // 
+    var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
+    chart.draw(data, options);
+}
+
+      //____________GRAFICO EVALUACIONES HSE_____________________________
+
+      //grafico barras
+    
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawVisualization);
+
+function drawVisualization() {
+    // Some raw data (not necessarily accurate)
+    var data = google.visualization.arrayToDataTable([
+        ['Sprint', 'Trabajo equipo', 'Comunicacion', 'Manejo estrés', 'PROMEDIO'],
+        ['Sprint1',  60,      75,         60,          70],
+        ['Sprint2',  50,      60,        100,          75],
+        ['Sprint3',  55,      90,         70,          80],         
+    ]);
+
+    var options = {
+        title : 'Evaluación por Sprint',
+        vAxis: {title: '%Evaluación'},
+        hAxis: {title: '2017 II'},
+        seriesType: 'bars',
+        series: {5: {type: 'line'}},
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+}
+
+//Grafico Donut HSE
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'nivel');
+    data.addColumn('number', 'Populartiy');
+    data.addRows([
+        ['Nivel Alto [90-100]', 2],
+        ['Nivel Medio Alto [70-89]', 2],
+        ['Nivel Medio [50-69]', 2],
+        ['Nivel Medio bajo [30-49]', 0],
+        ['Nivel Bajo [0-29]', 3]
+    ]);
+
+    var options = {
+    title: '% de Alumnas por Nivel de Evaluación',
+    sliceVisibilityThreshold: .2
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div2'));
+    chart.draw(data, options);
+}
     //NAVEGADOR
-    function openNav() {
+function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
 

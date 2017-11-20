@@ -260,21 +260,16 @@ a:active{
 }
 
 .div_notas td{
-    border:1px solid transparent;  
+    border:1px solid lightgray;  
     width:500px;
 }
 
-.chart{
-    border: 1px solid #ccc;
-    
+#chart_div svg{
+    width:500px;
 }
 
-.img-graficos-body{/*div de graficos y textos en pntje tecnico*/
-    border: 3px solid red;
+#chart_div svg g path{
     text-align: center;
-    width: 400px;
-    height: 300px;
-    margin-left: 40px;
 }
 
 .turno{
