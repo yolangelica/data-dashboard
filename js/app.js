@@ -687,7 +687,6 @@ function showMe () {
     }
 }
 
-
 //________FUNCION PARA ELIMINAR ALUMNAS DE LA LISTA _________
 
 btn_eliminar.setAttribute('class','btn_eliminar');

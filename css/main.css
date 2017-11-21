@@ -620,7 +620,3 @@ html {
 .checked {/*estrella*/
     color: orange;
 }
-
-.delete{
-    display:none;
-}
