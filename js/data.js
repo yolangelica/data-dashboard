@@ -46,7 +46,7 @@ var data = {
     },
     {
       'name': 'Judy Meindl',
-      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/F3FF00/ffffff',
       'active': true,
       'specialization':'Plan común AM',
       'sprints': [
@@ -90,7 +90,7 @@ var data = {
     },
     {
       'name': 'Sydney Burlingham',
-      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/F3FF00/ffffff',
       'active': true,
       'specialization':'Plan común PM',
       'sprints': [
@@ -140,7 +140,7 @@ var data = {
     },
     {
       'name': 'Chiarra Dutton',
-      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/F3FF00/ffffff',
       'active': true,
       'specialization':'Plan común PM',
       'sprints': [
@@ -208,7 +208,7 @@ var data = {
     },
     {
       'name': 'Collette Tubby',
-      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/F3FF00/ffffff',
       'active': true,
       'specialization':'UX Design',
       'sprints': [
@@ -252,7 +252,7 @@ var data = {
     },
     {
       'name': 'Leta Cuel',
-      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/F3FF00/ffffff',
       'active': true,
       'specialization':'Frontend Developer',
       'sprints': [
@@ -308,7 +308,7 @@ var data = {
     },
     {
       'name': 'Wilie Dunkinson',
-      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/F3FF00/ffffff',
       'active': true,
       'specialization':'Plan común AM',      
       'sprints': [
@@ -352,7 +352,7 @@ var data = {
     },
     {
       'name': 'Arlina Flacke',
-      'photo': 'http://dummyimage.com/162x148.png/FBBE00/ffffff',
+      'photo': 'http://dummyimage.com/162x148.png/F3FF00/ffffff',
       'active': true,
       'specialization':'UX Design',
       'sprints': [

@@ -640,60 +640,52 @@ var checkbox_materia = document.getElementsByName('especialidad');
 var div_alumnas = document.getElementsByClassName('div_students');
 
 function showMe () {
-    //var arregloStudents = document.getElementsByName("ux");
-    //console.log(arregloStudents);
 
-    for (var i =0 ; i < data.students.length ; i++){
-        var alumna = data.students[i].specialization;
+    if (checkbox_materia[0].checked == true){
+        div_alumnas[0].style.display='block';
+        div_alumnas[1].style.display='block';
+        div_alumnas[2].style.display='block';
+        div_alumnas[11].style.display='block';
+        div_alumnas[12].style.display='block';
+    }else{            
+        div_alumnas[0].style.display='none';
+        div_alumnas[1].style.display='none';
+        div_alumnas[2].style.display='none';
+        div_alumnas[11].style.display='none';
+        div_alumnas[12].style.display='none';          
+    }
 
-        if (checkbox_materia[0].checked == true){
-            div_alumnas[0].style.display='block';
-            div_alumnas[1].style.display='block';
-            div_alumnas[2].style.display='block';
-            div_alumnas[11].style.display='block';
-            div_alumnas[12].style.display='block';
-        }else{            
-            div_alumnas[0].style.display='none';
-            div_alumnas[1].style.display='none';
-            div_alumnas[2].style.display='none';
-            div_alumnas[11].style.display='none';
-            div_alumnas[12].style.display='none';          
-        }
+    if (checkbox_materia[1].checked == true){
+        div_alumnas[3].style.display='block';            
+        div_alumnas[4].style.display='block';            
+        div_alumnas[5].style.display='block';            
+    }else{            
+        div_alumnas[3].style.display='none';
+        div_alumnas[4].style.display='none';
+        div_alumnas[5].style.display='none';
+    }
 
-        if (checkbox_materia[1].checked == true){
-            div_alumnas[3].style.display='block';            
-            div_alumnas[4].style.display='block';            
-            div_alumnas[5].style.display='block';            
-        }else{            
-            div_alumnas[3].style.display='none';
-            div_alumnas[4].style.display='none';
-            div_alumnas[5].style.display='none';
-        }
+    if (checkbox_materia[2].checked == true){
+        div_alumnas[6].style.display='block';            
+        div_alumnas[7].style.display='block';            
+        div_alumnas[13].style.display='block';            
+    }else{            
+        div_alumnas[6].style.display='none';
+        div_alumnas[7].style.display='none';
+        div_alumnas[13].style.display='none';
+    }
 
-        if (checkbox_materia[2].checked == true){
-            div_alumnas[6].style.display='block';            
-            div_alumnas[7].style.display='block';            
-            div_alumnas[13].style.display='block';            
-        }else{            
-            div_alumnas[6].style.display='none';
-            div_alumnas[7].style.display='none';
-            div_alumnas[13].style.display='none';
-        }
-
-        if (checkbox_materia[3].checked == true){
-            div_alumnas[8].style.display='block';            
-            div_alumnas[9].style.display='block';            
-            div_alumnas[10].style.display='block'; 
-            div_alumnas[14].style.display='block';                        
-        }else{            
-            div_alumnas[8].style.display='none';
-            div_alumnas[9].style.display='none';
-            div_alumnas[10].style.display='none';
-            div_alumnas[14].style.display='none';
-        }
+    if (checkbox_materia[3].checked == true){
+        div_alumnas[8].style.display='block';            
+        div_alumnas[9].style.display='block';            
+        div_alumnas[10].style.display='block'; 
+        div_alumnas[14].style.display='block';                        
+    }else{            
+        div_alumnas[8].style.display='none';
+        div_alumnas[9].style.display='none';
+        div_alumnas[10].style.display='none';
+        div_alumnas[14].style.display='none';
     }
 }
 
-function eliminar(){
 
-}
