@@ -325,29 +325,29 @@ input[type=text]:focus {
     background-color: white;
 }
 
-#tabla_estudiantes {
+.tabla_estudiantes {
     background-color: white;
 }
 
-#tabla_estudiantes tr{
+.tabla_estudiantes tr{
     background-color: white;
 }
 
-#tabla_estudiantes td{
+.tabla_estudiantes td{
     border:none;
     width:120px;
     text-align: center;
     vertical-align: top;
 }
 
-#tabla_estudiantes h4{
+.tabla_estudiantes h4{
     margin: 10px 5px 0px;
     padding: 5px;
     background-color: lightgrey;
     border-radius: 3px 3px 0px 0px;
 }
 
-#tabla_estudiantes h5{
+.tabla_estudiantes h5{
     margin: 0px 5px;
     padding: 5px;
     background-color: lightgrey;
@@ -620,3 +620,4 @@ html {
 .checked {/*estrella*/
     color: orange;
 }
+

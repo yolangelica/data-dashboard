@@ -264,13 +264,13 @@ div_all_students.style.verticalAlign='top';
 content_students.appendChild(div_all_students);
 
 for (var i = 0; i < data.students.length; i++){
-    if (data.students[i].sprints.length == 2){
+    if (data.students[i].active == true){
 
     var div_students = document.createElement('div');
     div_students.setAttribute('class','div_students');
 
     var tab_student = document.createElement('table');
-    tab_student.setAttribute('id','tabla_estudiantes');
+    tab_student.setAttribute('class','tabla_estudiantes');
     var tr_student = document.createElement('tr');
 
     var td_student = document.createElement('td');
@@ -322,6 +322,7 @@ for (var i = 0; i < data.students.length; i++){
     
     var btn_eliminar = document.createElement('button');
     btn_eliminar.setAttribute('class','btn_eliminar');
+    btn_eliminar.setAttribute('onclick','eliminar()')
     var txt_btn = document.createTextNode('Eliminar');
     btn_eliminar.appendChild(txt_btn);
 
@@ -638,3 +639,62 @@ function myFunction1() {
  }
 
 
+// ____________ FUNCION PARA SELECCIONAR ALUMNAS SEGÚN CURSO _______
+
+var checkbox_materia = document.getElementsByName('especialidad');
+var div_alumnas = document.getElementsByClassName('div_students');
+
+function showMe () {
+    //var arregloStudents = document.getElementsByName("ux");
+    //console.log(arregloStudents);
+
+    for (var i =0 ; i < data.students.length ; i++){
+        var alumna = data.students[i].specialization;
+
+        if (checkbox_materia[0].checked == true){
+            div_alumnas[0].style.display='block';
+            div_alumnas[1].style.display='block';
+            div_alumnas[2].style.display='block';
+            div_alumnas[11].style.display='block';
+            div_alumnas[12].style.display='block';
+        }else{            
+            div_alumnas[0].style.display='none';
+            div_alumnas[1].style.display='none';
+            div_alumnas[2].style.display='none';
+            div_alumnas[11].style.display='none';
+            div_alumnas[12].style.display='none';          
+        }
+
+        if (checkbox_materia[1].checked == true){
+            div_alumnas[3].style.display='block';            
+            div_alumnas[4].style.display='block';            
+            div_alumnas[5].style.display='block';            
+        }else{            
+            div_alumnas[3].style.display='none';
+            div_alumnas[4].style.display='none';
+            div_alumnas[5].style.display='none';
+        }
+
+        if (checkbox_materia[2].checked == true){
+            div_alumnas[6].style.display='block';            
+            div_alumnas[7].style.display='block';            
+            div_alumnas[13].style.display='block';            
+        }else{            
+            div_alumnas[6].style.display='none';
+            div_alumnas[7].style.display='none';
+            div_alumnas[13].style.display='none';
+        }
+
+        if (checkbox_materia[3].checked == true){
+            div_alumnas[8].style.display='block';            
+            div_alumnas[9].style.display='block';            
+            div_alumnas[10].style.display='block'; 
+            div_alumnas[14].style.display='block';                        
+        }else{            
+            div_alumnas[8].style.display='none';
+            div_alumnas[9].style.display='none';
+            div_alumnas[10].style.display='none';
+            div_alumnas[14].style.display='none';
+        }
+    }
+}
