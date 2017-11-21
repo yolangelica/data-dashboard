@@ -621,3 +621,6 @@ html {
     color: orange;
 }
 
+.delete{
+    display:none;
+}

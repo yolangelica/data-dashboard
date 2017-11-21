@@ -351,7 +351,6 @@ for (var i = 0; i < data.students.length; i++){
     }
 }
 
-
 google.charts.setOnLoadCallback(drawSarahChart);
 //funcion boton eliminar estudiantes
 function myFunction() {
@@ -592,8 +591,6 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-
-
 //______________ NOTA PROFESOR Y JEDI ____________________
 
 var profesores_div = document.getElementById('teachers');
@@ -618,7 +615,6 @@ div_profe_jedi.appendChild(p_jedi);
 
 profesores_div.insertBefore(div_profe_jedi,profesores_turno); 
 
-
 //______________ NOTA PROFESOR Y JEDI ____________________
 
 // Funciones para mostrar y esconder las notas de los profesores
@@ -637,7 +633,6 @@ function myFunction1() {
     var element = document.getElementById("myDIV3");
     element.classList.toggle("hidden_notes");
  }
-
 
 // ____________ FUNCION PARA SELECCIONAR ALUMNAS SEGÚN CURSO _______
 
@@ -697,4 +692,8 @@ function showMe () {
             div_alumnas[14].style.display='none';
         }
     }
+}
+
+function eliminar(){
+
 }
