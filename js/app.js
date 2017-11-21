@@ -322,7 +322,6 @@ for (var i = 0; i < data.students.length; i++){
     
     var btn_eliminar = document.createElement('button');
     btn_eliminar.setAttribute('class','btn_eliminar');
-    btn_eliminar.setAttribute('onclick','eliminar()')
     var txt_btn = document.createTextNode('Eliminar');
     btn_eliminar.appendChild(txt_btn);
 
@@ -689,3 +688,68 @@ function showMe () {
 }
 
 
+//________FUNCION PARA ELIMINAR ALUMNAS DE LA LISTA _________
+
+btn_eliminar.setAttribute('class','btn_eliminar');
+
+var btns_eliminar = document.getElementsByClassName('btn_eliminar');
+
+btns_eliminar[0].addEventListener('click', function(){
+    div_alumnas[0].style.display = 'none';
+})
+
+btns_eliminar[1].addEventListener('click', function(){
+    div_alumnas[1].style.display = 'none';
+})
+
+btns_eliminar[2].addEventListener('click', function(){
+    div_alumnas[2].style.display = 'none';
+})
+
+btns_eliminar[3].addEventListener('click', function(){
+    div_alumnas[3].style.display = 'none';
+})
+
+btns_eliminar[4].addEventListener('click', function(){
+    div_alumnas[4].style.display = 'none';
+})
+
+btns_eliminar[5].addEventListener('click', function(){
+    div_alumnas[5].style.display = 'none';
+})
+
+btns_eliminar[6].addEventListener('click', function(){
+    div_alumnas[6].style.display = 'none';
+})
+
+btns_eliminar[7].addEventListener('click', function(){
+    div_alumnas[7].style.display = 'none';
+})
+
+btns_eliminar[8].addEventListener('click', function(){
+    div_alumnas[8].style.display = 'none';
+})
+
+btns_eliminar[9].addEventListener('click', function(){
+    div_alumnas[9].style.display = 'none';
+})
+
+btns_eliminar[10].addEventListener('click', function(){
+    div_alumnas[10].style.display = 'none';
+})
+
+btns_eliminar[11].addEventListener('click', function(){
+    div_alumnas[11].style.display = 'none';
+})
+
+btns_eliminar[12].addEventListener('click', function(){
+    div_alumnas[12].style.display = 'none';
+})
+
+btns_eliminar[13].addEventListener('click', function(){
+    div_alumnas[13].style.display = 'none';
+})
+
+btns_eliminar[14].addEventListener('click', function(){
+    div_alumnas[14].style.display = 'none';
+})
